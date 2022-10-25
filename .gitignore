@@ -1,0 +1,7 @@
+*.pyc
+*.csv
+*.tsv
+*.xlsx
+__pycache__/
+GIL.egg-info/
+!sample_sheet_template.csv
