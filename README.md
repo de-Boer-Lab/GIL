@@ -1,10 +1,10 @@
-# GIL
+# GIL: Generate Indexes for Libraries
 
-GIL (Generate Indexes for Libraries) is a package that generates indexing
-primers for multiplexed sequencing.
+GIL is a Python package that designs indexing primers for multiplexed sequencing.
 
 A web app version of GIL is available here: https://dbl-gil.streamlitapp.com/.
 
+![](images/novaseq_gil@0.25x.png)
 # Installation
 
 GIL requires Python 3.6 or higher and is not compatible with Python 2. The optional
