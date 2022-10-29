@@ -5,3 +5,4 @@
 __pycache__/
 GIL.egg-info/
 !sample_sheet_template.csv
+!Final_Indexes/**
