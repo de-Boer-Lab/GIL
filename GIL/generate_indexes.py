@@ -130,10 +130,8 @@ def main(argv=sys.argv[1:]):
         plate_name = i7_file.split(".")[0]
         split_name = plate_name.split("_")
         plate_name = "_".join([split_name[i] for i in [0, 3, 4]])
-        make_sample_sheet_UDI(f"{index_dir}i7/{i7_file}", f"{index_dir}i5/{i5_file}", i5_direction="forward",
-                            plate_name=plate_name, dir=f"{args.out_dir}/Sample_Sheets/", template=template_dir)
-        make_sample_sheet_UDI(f"{index_dir}i7/{i7_file}", f"{index_dir}i5/{i5_file}", i5_direction="reverse",
-                            plate_name=plate_name, dir=f"{args.out_dir}/Sample_Sheets/", template=template_dir)
+        make_sample_sheet_UDI(f"{index_dir}i7/{i7_file}", f"{index_dir}i5/{i5_file}",
+                            plate_name=plate_name, out_dir=f"{args.out_dir}/Sample_Sheets/")
 
 if __name__ == '__main__':
     main()

@@ -341,12 +341,16 @@ indexing primers, **not** the index sequences that will be read by the sequencer
 `Primers` contains TSV files of the indexing primers for each plate generated. They are arranged
 identically to the index TSV files but contain the entire primer sequence, not just the index.
 
-`Sample_Sheets` contains two CSV files for each plate generated, which can be used for sample
-demultiplexing. Because different sequencers read the i5 index in different directions, two
-different sample sheets are required for each plate, named "forward" or "reverse". The forward
-file is used for sequencers that read the i5 index in the same direction as it appears in the primer,
-while the reverse file is used for sequencers that read the reverse complement of the i5 index sequence
-as it appears in the primer.
+`Sample_Sheets` contains a CSV file for each plate generated which provides the index sequences
+in each well for sample demultiplexing. Because different sequencers read the i5 index in different directions,
+there are two columns for the i5 index sequence. The first column is for the "forward strand workflow",
+where the index read by the sequencer matches the 5'-3' sequence of the index present in the adapter primer.
+The second column is for the "reverse strand workflow", which reads the reverse complement of the sequence present
+in the adapter primer.
+
+The top of the sample sheet explains which i5 column to use for different Illumina instruments. If you do not
+already have an Illumina sample sheet template, templates for v1 and v2 sample sheets can be found in the `templates` directory.
+Paste the i7 and i5 index columns for your samples into the index and index2 columns in the data section, respectively.
 
 # Unique vs Combinatorial Dual Indexes
 
@@ -375,7 +379,7 @@ index 6,144 samples. To do this, simply choose one row from the i7 plate and one
 The 12 i7 indexes from the row are copied down the columns of the new plate, and the first 8 indexes
 of the i5 row are copied along the rows of the new plate.
 
-Sample sheets for a CDI plate can be created using `create_sample_sheets.py`. Specify the rows of the original
+Sample sheets for CDI plates can be created using `create_sample_sheets.py`. Specify the rows of the original
 UDI plates that the i7 and i5 primers were taken from, and the path to the TSV file containing the indexes for
 the original UDI plate. For a detailed example, see [below](#making-cdi-plates).
 
@@ -508,7 +512,7 @@ To create a sample sheet for this new CDI plate, run the following:
 GIL create_sample_sheets --i7s Output/Plates/Indexes/i7/TruSeq_i7_Indexes_Plate_1.tsv --i5s Output/Plates/Indexes/i5/TruSeq_i5_Indexes_Plate_1.tsv --i7-row A --i5-row A --plate-name CDI_plate1_i5A_i7A
 ```
 
-Under `Output/Sample_Sheets` you should now see two new sample sheets: `CDI_plate1_i5A_i7A_sample_sheet_forward.csv` and `CDI_plate1_i5A_i7A_sample_sheet_reverse.csv`.
+Under `Output/Sample_Sheets` you should now see a new sample sheet: `CDI_plate1_i5A_i7A_sample_sheet.csv`
 Note that `--plate-name` is a required argument, but it can be whatever you want.
 
 # Testing
