@@ -349,7 +349,7 @@ The second column is for the "reverse strand workflow", which reads the reverse 
 in the adapter primer.
 
 The top of the sample sheet explains which i5 column to use for different Illumina instruments. If you do not
-already have an Illumina sample sheet template, templates for v1 and v2 sample sheets can be found in the `templates` directory.
+already have an Illumina sample sheet template, templates for v1 and v2 sample sheets can be found in the `GIL/templates` directory.
 Paste the i7 and i5 index columns for your samples into the index and index2 columns in the data section, respectively.
 
 # Unique vs Combinatorial Dual Indexes
