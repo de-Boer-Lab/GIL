@@ -351,7 +351,7 @@ def generate_colour_balanced_indices(seqs, group_size, max_iterations, channel_2
 
     while counter < max_iterations:
         if len(seqs) < group_size:
-            print("Ran out of sequences")
+            # print("Ran out of sequences")
             break
 
         sampled_seqs = random.sample(seqs, group_size)
@@ -383,6 +383,9 @@ def create_primer_plates(i7_lists, i5_lists, i5_start, i5_end, i7_start, i7_end,
     i5_primers = [i5_start + index + i5_end for index in rc_i5s]
 
     num_plates = min(len(i7s) // 96, len(i5s) // 96)
+
+    if num_plates < 1:
+        raise ValueError("Not enough indexes to create a 96 well plate")
 
     os.makedirs(f"{dir}/Plates/Indexes", exist_ok=True)
     os.makedirs(f"{dir}/Plates/Indexes/i7", exist_ok=True)

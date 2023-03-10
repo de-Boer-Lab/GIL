@@ -17,7 +17,7 @@ except ModuleNotFoundError:
 def main(argv=sys.argv[1:]):
     parser = argparse.ArgumentParser()
     parser.add_argument("--length", default=8, type=int, help="length of indexes")
-    parser.add_argument("--dist", default=3, type=int, help="Minimum Levenshtein distance between indexes")
+    parser.add_argument("--dist", default=3, type=int, help="minimum Levenshtein distance between indexes")
     parser.add_argument("--min-GC", default=25, type=int, help="GC content of indexes will be strictly higher than this value")
     parser.add_argument("--max-GC", default=75, type=int, help="GC content of indexes will be strictly lower than this value")
     parser.add_argument("--max-homopolymer", default=2, type=int, help="maximum length of homopolymer repeats in indexes")
@@ -31,10 +31,48 @@ def main(argv=sys.argv[1:]):
     parser.add_argument("--blocklist", type=str, help="path to file containing blocklist indexes")
     parser.add_argument("--no-mod", action="store_true", default=False, help="don't add a '*' (phosphorothioate modification) to primers in order sheet")
     parser.add_argument("--out-dir", default="Output", type=str, help="path to location of program outputs")
-    parser.add_argument("--seed", type=int, help="Seed for reproducible index generation")
-    parser.add_argument("--company", default="IDT", type=str, choices=["IDT", "Thermo", "Sigma"], help="Format to use for oligo order sheet")
+    parser.add_argument("--seed", type=int, help="seed for reproducible index generation")
+    parser.add_argument("--company", default="IDT", type=str, choices=["IDT", "Thermo", "Sigma"], help="format to use for oligo order sheet")
     
     args = parser.parse_args(argv)
+
+    # Check for correct argument values
+
+    if args.length < 4:
+        sys.exit("Error: --length must be at least 4 to generate enough indexes.")
+    
+    if args.length > 45:
+        print(f"Warning: are you sure you need indexes of length {args.length}? "
+               "Colour balancing of long indexes (>45) is difficult, resulting in few or no "
+               "generated indexes. You can try relaxing filtering parameters or increasing "
+               "--sample-n if you really need indexes this long.")
+        
+    if args.dist < 1:
+        sys.exit("Error: --dist must be > 0 to ensure no duplicate indexes.")
+    
+    if args.dist > args.length:
+        sys.exit(f"Error: --dist cannot be greater than --length. --dist is set to {args.dist}, "
+                         f"but --length is set to {args.length}.")
+        
+    if args.dist >= args.length / 2:
+        print(f"Warning: are you sure you need a distance of {args.dist} for indexes of length {args.length}? "
+               "It is difficult to generate sufficient indexes when distance >= length/2. "
+               "You can try relaxing filtering parameters, or increasing "
+               "--sample-n (if your index length is greater than 9) if "
+               "you really need a distance this large.")
+        
+    if args.min_GC < 0 or args.min_GC > 100 or args.max_GC < 0 or args.max_GC > 100:
+        sys.exit("Error: --min-GC and max-GC must be between 0 and 100.")
+        
+    if args.min_GC > args.max_GC:
+        sys.exit("Error: you have requested a minimum GC content which is higher "
+                 "than the requested maximum GC content. Please ensure --min-GC < --max-GC.")
+        
+    if args.max_homopolymer < 1 or args.max_homopolymer > args.length // 2:
+        sys.exit("Error: --max-homopolymer must be > 1 and < --length // 2.")
+
+    if args.max_dinu < 1 or args.max_dinu > args.length // 2:
+        sys.exit("Error: --max-dinu must be > 1 and < --length // 2.")
 
     if args.seed:
         random.seed(args.seed)
@@ -52,7 +90,7 @@ def main(argv=sys.argv[1:]):
         primer_i7_end = "GTCTCGTGGGCTCGG"
     else:
         if args.primer_sequences is None:
-            raise ValueError("primer sequences must be supplied with the --primer_sequences argument "
+            sys.exit("Error: primer sequences must be supplied with the --primer_sequences argument "
                             "if custom library type is chosen")
         primer_seqs = args.primer_sequences.split()
         primer_i5_start = primer_seqs[0]
@@ -72,7 +110,7 @@ def main(argv=sys.argv[1:]):
             blocklist = [index.strip() for index in f.readlines()]
 
     # Generate all possible indexes. For index lengths > 9, generating all possible sequences and filtering them
-    # all takes too long. Instead, generate a sample of 200k sequences (about the same number as all 9mers).
+    # all takes too long. Instead, generate a sample of 5k sequences.
     if args.length < 10 and args.sample_n is None:
         seqs = enumerate_all_sequences(["A", "C", "G", "T"], args.length)
     else:
@@ -110,8 +148,12 @@ def main(argv=sys.argv[1:]):
     final_i5 = generate_colour_balanced_indices(seqs_i5, 4, 1_000_000)
 
     # Create index and primer files and order and sample sheets
-    create_primer_plates(final_i7, final_i5, i5_start=primer_i5_start, i5_end=primer_i5_end,
-                        i7_start=primer_i7_start, i7_end=primer_i7_end, dir=args.out_dir, plate_name=library_name)
+    try:
+        create_primer_plates(final_i7, final_i5, i5_start=primer_i5_start, i5_end=primer_i5_end,
+                             i7_start=primer_i7_start, i7_end=primer_i7_end, dir=args.out_dir, plate_name=library_name)
+    except ValueError:
+        sys.exit("Not enough indexes to create a 96 well plate. You can try again with relaxed parameters, or try "
+                 "increasing --sample-n if the length of your indexes is greater than 9.")
 
     primer_dir = f"{args.out_dir}/Plates/Primers/"
     for plate_file in os.listdir(primer_dir):
