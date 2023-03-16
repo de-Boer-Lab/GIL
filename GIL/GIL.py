@@ -5,7 +5,7 @@ GIL.py - Generate indexes for multiplexed sequencing libraries
 
 Choose from two tools:
   - generate_indexes
-  - create_sample_sheet
+  - create_sample_sheets
 
 For help with a specific tool, type:
     GIL <tool> --help
