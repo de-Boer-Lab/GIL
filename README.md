@@ -56,7 +56,7 @@ To lower the cost of multiplex library preparation, we designed a program that
 generates primers containing compatible indexes, which can be ordered as standard
 oligos for a fraction of the cost of commercially-available indexing primers.
 The program outputs primer sequences in a ready-to-order format and also generates
-sample sheet templates for demultiplexing.
+index sheets that show the index sequences to use for demultiplexing.
 
 ## Sequencing library structure
 
@@ -195,15 +195,15 @@ By default, sequences will be different each time the program is run (no seed).
 The path of the directory that all files will be saved to. By default,
 this is "Output".
 
-## Arguments for sample sheet creation
+## Arguments for index sheet creation
 
-The following arguments can be can be used when making sample sheets
-(e.g. for combinatorial dual index plates) with the `create_sample_sheets` command:
+The following arguments can be can be used when making index sheets
+(e.g. for combinatorial dual index plates) with the `create_index_sheets` command:
 
 ### --unique
 
-Create sample sheets for unique dual indexes. By default create_sample_sheets.py will create
-sample sheets for combinatorial dual indexes without this flag.
+Create index sheets for unique dual indexes. By default create_index_sheets will create
+index sheets for combinatorial dual indexes without this flag.
 
 ### --i7s
 
@@ -219,7 +219,7 @@ sequence read during sequencing.
 
 ### --plate-name
 
-**Required**. Name of the plate. This will appear in the sample sheet filename.
+**Required**. Name of the plate. This will appear in the index sheet filename.
 
 ### --i7-row
 
@@ -231,8 +231,8 @@ Required unless `--unique` flag is used. The row (A-H) from the i5 plate used to
 
 ### --out-dir
 
-The path to the directory that sample sheets will be saved to. Default is `Output/Sample_Sheets`, which is
-the same directory that sample sheets are saved to when generating indexes.
+The path to the directory that index sheets will be saved to. Default is `Output/Index_Sheets`, which is
+the same directory that index sheets are saved to when generating indexes.
 
 # Overview of the index generation process
 
@@ -341,15 +341,16 @@ indexing primers, **not** the index sequences that will be read by the sequencer
 `Primers` contains TSV files of the indexing primers for each plate generated. They are arranged
 identically to the index TSV files but contain the entire primer sequence, not just the index.
 
-`Sample_Sheets` contains a CSV file for each plate generated which provides the index sequences
-in each well for sample demultiplexing. Because different sequencers read the i5 index in different directions,
+`Index_Sheets` contains a CSV file for each plate generated which provides the index sequences
+in each well to use for sample demultiplexing. Because different sequencers read the i5 index in different directions,
 there are two columns for the i5 index sequence. The first column is for the "forward strand workflow",
 where the index read by the sequencer matches the 5'-3' sequence of the index present in the adapter primer.
-The second column is for the "reverse strand workflow", which reads the reverse complement of the sequence present
+The second column is for the "reverse complement workflow", which reads the reverse complement of the sequence present
 in the adapter primer.
 
-The top of the sample sheet explains which i5 column to use for different Illumina instruments. If you do not
-already have an Illumina sample sheet template, templates for v1 and v2 sample sheets can be found in the `templates` directory.
+The top of the index sheet explains which i5 column to use for different Illumina instruments. You can supply these
+indexes to your sequencing core, or paste them into an existing sample sheet if you will be demultiplexing BCL files yourself. If you do not
+already have a sample sheet template, templates for v1 and v2 sample sheets can be found in the `templates` directory.
 Paste the i7 and i5 index columns for your samples into the index and index2 columns in the data section, respectively.
 
 # Unique vs Combinatorial Dual Indexes
@@ -373,13 +374,13 @@ assigned to the wrong sample.
 
 ## Generating Combinatorial Index Plates
 
-By default, `generate_indexes.py` creates plates for the UDI indexing strategy: 96 i7 and 96 i5 primers for
+By default, `generate_indexes` creates plates for the UDI indexing strategy: 96 i7 and 96 i5 primers for
 each plate generated. One set of 96 primer pairs for UDI can be expanded to 64 plates of CDI primers, which can
 index 6,144 samples. To do this, simply choose one row from the i7 plate and one row from the i5 plate.
 The 12 i7 indexes from the row are copied down the columns of the new plate, and the first 8 indexes
 of the i5 row are copied along the rows of the new plate.
 
-Sample sheets for CDI plates can be created using `create_sample_sheets.py`. Specify the rows of the original
+Index sheets for CDI plates can be created using `create_index_sheets`. Specify the rows of the original
 UDI plates that the i7 and i5 primers were taken from, and the path to the TSV file containing the indexes for
 the original UDI plate. For a detailed example, see [below](#making-cdi-plates).
 
@@ -507,12 +508,12 @@ CDI plate would not be guaranteed to be colour balanced. Using rows from the UDI
 that the CDI plate is colour balanced in blocks of 4x4 indexes.
 
 Let's assume that you've created the CDI plate from the first i5 and i7 plates generated by GIL.
-To create a sample sheet for this new CDI plate, run the following:
+To create an index sheet for this new CDI plate, run the following:
 ```
-GIL create_sample_sheets --i7s Output/Plates/Indexes/i7/TruSeq_i7_Indexes_Plate_1.tsv --i5s Output/Plates/Indexes/i5/TruSeq_i5_Indexes_Plate_1.tsv --i7-row A --i5-row A --plate-name CDI_plate1_i5A_i7A
+GIL create_index_sheets --i7s Output/Plates/Indexes/i7/TruSeq_i7_Indexes_Plate_1.tsv --i5s Output/Plates/Indexes/i5/TruSeq_i5_Indexes_Plate_1.tsv --i7-row A --i5-row A --plate-name CDI_plate1_i5A_i7A
 ```
 
-Under `Output/Sample_Sheets` you should now see a new sample sheet: `CDI_plate1_i5A_i7A_sample_sheet.csv`
+Under `Output/Index_Sheets` you should now see a new index sheet: `CDI_plate1_i5A_i7A_index_sheet.csv`
 Note that `--plate-name` is a required argument, but it can be whatever you want.
 
 # Testing

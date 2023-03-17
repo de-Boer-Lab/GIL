@@ -103,6 +103,9 @@ def levenshtein(s1, s2):
 
 
 def read_tsv(filename):
+  # Check that extension is .tsv
+  if filename[-4:] != ".tsv":
+    raise ValueError("Error: file extension must be .tsv")
   with open(filename, "r") as f:
     rd = csv.reader(f, delimiter="\t")
     return [line for line in rd]

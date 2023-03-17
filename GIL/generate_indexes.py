@@ -1,8 +1,7 @@
 import argparse
 import os
-import pathlib
 import random
-from GIL.create_sample_sheets import *
+from GIL.create_index_sheets import *
 from GIL.pipeline_components import *
 from GIL.tools import *
 
@@ -118,7 +117,9 @@ def main(argv=sys.argv[1:]):
             sample_n = 5000
         else:
             sample_n = args.sample_n
-        seqs = ["".join(random.choices(["A", "C", "G", "T"], k=args.length)) for i in range(sample_n)]
+        GC_weight = (args.max_GC + args.min_GC) / 200
+        AT_weight = 1 - GC_weight
+        seqs = ["".join(random.choices(["A", "C", "G", "T"], k=args.length, weights=[AT_weight, GC_weight, GC_weight, AT_weight])) for i in range(sample_n)]
 
     # Filter generated sequences
     if args.allow_start_G:
@@ -162,9 +163,6 @@ def main(argv=sys.argv[1:]):
         primer_name = "_".join([plate_name_split[i] for i in [3, 4, 0, 1]])
         make_order_sheet(f"{primer_dir}{plate_file}", plate_name, primer_name, company=args.company, dir=args.out_dir, mod=not args.no_mod)
 
-    GIL_dir = pathlib.Path(__file__).parent
-    template_dir = GIL_dir / 'templates' / 'sample_sheet_template.csv'
-
     index_dir = f"{args.out_dir}/Plates/Indexes/"
     i7_files = sorted(os.listdir(f"{index_dir}i7"))
     i5_files = sorted(os.listdir(f"{index_dir}i5"))
@@ -172,8 +170,8 @@ def main(argv=sys.argv[1:]):
         plate_name = i7_file.split(".")[0]
         split_name = plate_name.split("_")
         plate_name = "_".join([split_name[i] for i in [0, 3, 4]])
-        make_sample_sheet_UDI(f"{index_dir}i7/{i7_file}", f"{index_dir}i5/{i5_file}",
-                            plate_name=plate_name, out_dir=f"{args.out_dir}/Sample_Sheets/")
+        make_index_sheet_UDI(f"{index_dir}i7/{i7_file}", f"{index_dir}i5/{i5_file}",
+                            plate_name=plate_name, out_dir=f"{args.out_dir}/Index_Sheets/")
 
 if __name__ == '__main__':
     main()
