@@ -1,7 +1,7 @@
 import argparse
 import os
 import random
-from GIL.create_index_sheets import *
+from GIL.create_sample_sheets import *
 from GIL.pipeline_components import *
 from GIL.tools import *
 
@@ -163,6 +163,9 @@ def main(argv=sys.argv[1:]):
         primer_name = "_".join([plate_name_split[i] for i in [3, 4, 0, 1]])
         make_order_sheet(f"{primer_dir}{plate_file}", plate_name, primer_name, company=args.company, dir=args.out_dir, mod=not args.no_mod)
 
+    GIL_dir = pathlib.Path(__file__).parent
+    template_dir = GIL_dir / 'templates' / 'sample_sheet_template.csv'
+
     index_dir = f"{args.out_dir}/Plates/Indexes/"
     i7_files = sorted(os.listdir(f"{index_dir}i7"))
     i5_files = sorted(os.listdir(f"{index_dir}i5"))
@@ -171,7 +174,11 @@ def main(argv=sys.argv[1:]):
         split_name = plate_name.split("_")
         plate_name = "_".join([split_name[i] for i in [0, 3, 4]])
         make_index_sheet_UDI(f"{index_dir}i7/{i7_file}", f"{index_dir}i5/{i5_file}",
-                            plate_name=plate_name, out_dir=f"{args.out_dir}/Index_Sheets/")
+                            plate_name=plate_name, out_dir=f"{args.out_dir}/Sample_Sheets/")
+        make_sample_sheet_UDI(f"{index_dir}i7/{i7_file}", f"{index_dir}i5/{i5_file}", plate_name=plate_name, i5_direction="forward_strand",
+                              out_dir=f"{args.out_dir}/Sample_Sheets/Forward_Strand_Workflow_Sample_Sheets/", template=template_dir)
+        make_sample_sheet_UDI(f"{index_dir}i7/{i7_file}", f"{index_dir}i5/{i5_file}", plate_name=plate_name, i5_direction="reverse_complement",
+                              out_dir=f"{args.out_dir}/Sample_Sheets/Reverse_Complement_Workflow_Sample_Sheets/", template=template_dir)
 
 if __name__ == '__main__':
     main()
