@@ -53,9 +53,9 @@ def make_index_sheet_UDI(i7s_file, i5s_file, plate_name, out_dir):
           '"Reverse complement workflow: NextSeq 2000 (Sample Sheet v1), iSeq, NovaSeq 6000 with v1.5 reagent kits, '
           'MiniSeq, NextSeq 500/550, HiSeq 3000/4000/X"\n\n')
 
-  header = ("Plate Name,Well,i7 (Read 1) Sequence for Sample Sheet,"
-            "i5 (Read 2) Sequence for Sample Sheet (Forward Strand Workflow),"
-            "i5 (Read 2) Sequence for Sample Sheet (Reverse Complement Workflow)\n")
+  header = ("Plate Name,Well,i7 (Index 1) Sequence for Sample Sheet,"
+            "i5 (Index 2) Sequence for Sample Sheet (Forward Strand Workflow),"
+            "i5 (Index 2) Sequence for Sample Sheet (Reverse Complement Workflow)\n")
   
   index_lines = make_index_sheet_lines(i7s, i5s, plate_name)
 
@@ -94,9 +94,9 @@ def make_index_sheet_CDI(i7s_file, i5s_file, i7_row, i5_row, plate_name, out_dir
           '"Reverse complement workflow: NextSeq 2000 (Sample Sheet v1), iSeq, NovaSeq 6000 with v1.5 reagent kits, '
           'MiniSeq, NextSeq 500/550, HiSeq 3000/4000/X"\n\n')
 
-  header = ("Plate Name,Well,i7 (Read 1) Sequence for Sample Sheet,"
-            "i5 (Read 2) Sequence for Sample Sheet (Forward Strand Workflow),"
-            "i5 (Read 2) Sequence for Sample Sheet (Reverse Complement Workflow)\n")
+  header = ("Plate Name,Well,i7 (Index 1) Sequence for Sample Sheet,"
+            "i5 (Index 2) Sequence for Sample Sheet (Forward Strand Workflow),"
+            "i5 (Index 2) Sequence for Sample Sheet (Reverse Complement Workflow)\n")
   
   index_lines = make_index_sheet_lines(i7s, i5s, plate_name)
 
