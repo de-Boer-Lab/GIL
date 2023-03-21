@@ -1,0 +1,4045 @@
+{
+ "Flowcell" : "000000000-A0HGR",
+ "RunNumber" : 6,
+ "RunId" : "20220923_M00329_6_000000000-A0HGR",
+ "ReadInfosForLanes" : [
+  {
+   "LaneNumber" : 1,
+   "ReadInfos" : [
+    {
+     "Number" : 1,
+     "NumCycles" : 26,
+     "IsIndexedRead" : false
+    },
+    {
+     "Number" : 1,
+     "NumCycles" : 8,
+     "IsIndexedRead" : true
+    },
+    {
+     "Number" : 2,
+     "NumCycles" : 8,
+     "IsIndexedRead" : true
+    },
+    {
+     "Number" : 2,
+     "NumCycles" : 26,
+     "IsIndexedRead" : false
+    }
+   ]
+  }
+ ],
+ "ConversionResults" : [
+  {
+   "LaneNumber" : 1,
+   "TotalClustersRaw" : 815845,
+   "TotalClustersPF" : 815845,
+   "Yield" : 42423940,
+   "DemuxResults" : [
+    {
+     "SampleId" : "1",
+     "SampleName" : "1",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CGACTAGG+TACCATTG",
+       "MismatchCounts" : {
+        "0" : 6450,
+        "1" : 267
+       }
+      }
+     ],
+     "NumberReads" : 6717,
+     "Yield" : 349284,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 174642,
+       "YieldQ30" : 170896,
+       "QualityScoreSum" : 6346074,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 174642,
+       "YieldQ30" : 169780,
+       "QualityScoreSum" : 6210146,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "10",
+     "SampleName" : "10",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TACCTGGT+TGAGGTCT",
+       "MismatchCounts" : {
+        "0" : 39201,
+        "1" : 1179
+       }
+      }
+     ],
+     "NumberReads" : 40380,
+     "Yield" : 2099760,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 1049880,
+       "YieldQ30" : 1023598,
+       "QualityScoreSum" : 37942759,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 1049880,
+       "YieldQ30" : 1028614,
+       "QualityScoreSum" : 38359189,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "11",
+     "SampleName" : "11",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AGCAGTCT+AATTCGCA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "12",
+     "SampleName" : "12",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCAAGCCG+TCACGTAA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "13",
+     "SampleName" : "13",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TGGATTGC+CATTCCAT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "14",
+     "SampleName" : "14",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TTAGTGGT+AAGGTCTG",
+       "MismatchCounts" : {
+        "0" : 18783,
+        "1" : 864
+       }
+      }
+     ],
+     "NumberReads" : 19647,
+     "Yield" : 1021644,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 510822,
+       "YieldQ30" : 500228,
+       "QualityScoreSum" : 18546441,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 510822,
+       "YieldQ30" : 496297,
+       "QualityScoreSum" : 18137253,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "15",
+     "SampleName" : "15",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CAGCACAA+AACTGTCA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "16",
+     "SampleName" : "16",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CCTCAATA+TCCTTACA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "17",
+     "SampleName" : "17",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AAGATGGT+TCTCGATA",
+       "MismatchCounts" : {
+        "0" : 8614,
+        "1" : 361
+       }
+      }
+     ],
+     "NumberReads" : 8975,
+     "Yield" : 466700,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 233350,
+       "YieldQ30" : 228276,
+       "QualityScoreSum" : 8478170,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 233350,
+       "YieldQ30" : 227138,
+       "QualityScoreSum" : 8310753,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "18",
+     "SampleName" : "18",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AATGCCAA+TTGTGCGT",
+       "MismatchCounts" : {
+        "0" : 10454,
+        "1" : 467
+       }
+      }
+     ],
+     "NumberReads" : 10921,
+     "Yield" : 567892,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 283946,
+       "YieldQ30" : 277297,
+       "QualityScoreSum" : 10263417,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 283946,
+       "YieldQ30" : 277618,
+       "QualityScoreSum" : 10351427,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "19",
+     "SampleName" : "19",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ACTATTGC+TCCTGTGT",
+       "MismatchCounts" : {
+        "0" : 14488,
+        "1" : 575
+       }
+      }
+     ],
+     "NumberReads" : 15063,
+     "Yield" : 783276,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 391638,
+       "YieldQ30" : 361499,
+       "QualityScoreSum" : 13707123,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 391638,
+       "YieldQ30" : 340945,
+       "QualityScoreSum" : 13259636,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "2",
+     "SampleName" : "2",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CCGTACAT+CAACTGAA",
+       "MismatchCounts" : {
+        "0" : 14466,
+        "1" : 402
+       }
+      }
+     ],
+     "NumberReads" : 14868,
+     "Yield" : 773136,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 386568,
+       "YieldQ30" : 375221,
+       "QualityScoreSum" : 13900824,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 386568,
+       "YieldQ30" : 379616,
+       "QualityScoreSum" : 14149103,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "20",
+     "SampleName" : "20",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ATGCGGTG+CACGACTA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "21",
+     "SampleName" : "21",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ACGAACCT+TGGATTGA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "22",
+     "SampleName" : "22",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CACAATCG+TCAACTCA",
+       "MismatchCounts" : {
+        "0" : 25394,
+        "1" : 960
+       }
+      }
+     ],
+     "NumberReads" : 26354,
+     "Yield" : 1370408,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 685204,
+       "YieldQ30" : 667933,
+       "QualityScoreSum" : 24842762,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 685204,
+       "YieldQ30" : 661049,
+       "QualityScoreSum" : 24219781,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "23",
+     "SampleName" : "23",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCATTACG+TCGTTCTT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "24",
+     "SampleName" : "24",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCTCCGGA+TGGTGATT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "25",
+     "SampleName" : "25",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AGGAGTTA+AGCGGTGA",
+       "MismatchCounts" : {
+        "0" : 8539,
+        "1" : 534
+       }
+      }
+     ],
+     "NumberReads" : 9073,
+     "Yield" : 471796,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 235898,
+       "YieldQ30" : 230470,
+       "QualityScoreSum" : 8549808,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 235898,
+       "YieldQ30" : 226188,
+       "QualityScoreSum" : 8284515,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "26",
+     "SampleName" : "26",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTAGAACC+TGGTCTAA",
+       "MismatchCounts" : {
+        "0" : 33625,
+        "1" : 1001
+       }
+      }
+     ],
+     "NumberReads" : 34626,
+     "Yield" : 1800552,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 900276,
+       "YieldQ30" : 875302,
+       "QualityScoreSum" : 32470676,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 900276,
+       "YieldQ30" : 883711,
+       "QualityScoreSum" : 32894525,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "27",
+     "SampleName" : "27",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TACGATTC+CGGAAGAG",
+       "MismatchCounts" : {
+        "0" : 46716,
+        "1" : 920
+       }
+      }
+     ],
+     "NumberReads" : 47636,
+     "Yield" : 2477072,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 1238536,
+       "YieldQ30" : 1131145,
+       "QualityScoreSum" : 43144297,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 1238536,
+       "YieldQ30" : 938878,
+       "QualityScoreSum" : 39244473,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "28",
+     "SampleName" : "28",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AGGTAACA+ATGAAGGT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "29",
+     "SampleName" : "29",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CAGTAGCT+TTATGGCG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "3",
+     "SampleName" : "3",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CCAATAGT+TTGCTCCA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "30",
+     "SampleName" : "30",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TAATGCAG+AAGGCGTT",
+       "MismatchCounts" : {
+        "0" : 13346,
+        "1" : 531
+       }
+      }
+     ],
+     "NumberReads" : 13877,
+     "Yield" : 721604,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 360802,
+       "YieldQ30" : 351643,
+       "QualityScoreSum" : 13060841,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 360802,
+       "YieldQ30" : 348566,
+       "QualityScoreSum" : 12767049,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "31",
+     "SampleName" : "31",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTTGGAAC+ACGCGCAA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "32",
+     "SampleName" : "32",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ACATCTCT+CAGCCAGA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "33",
+     "SampleName" : "33",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TAGAGGCT+ACTCCACG",
+       "MismatchCounts" : {
+        "0" : 7194,
+        "1" : 249
+       }
+      }
+     ],
+     "NumberReads" : 7443,
+     "Yield" : 387036,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 193518,
+       "YieldQ30" : 189084,
+       "QualityScoreSum" : 7014786,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 193518,
+       "YieldQ30" : 187716,
+       "QualityScoreSum" : 6872713,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "34",
+     "SampleName" : "34",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ACTGGAAT+TCTGTGAA",
+       "MismatchCounts" : {
+        "0" : 12827,
+        "1" : 399
+       }
+      }
+     ],
+     "NumberReads" : 13226,
+     "Yield" : 687752,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 343876,
+       "YieldQ30" : 334748,
+       "QualityScoreSum" : 12405757,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 343876,
+       "YieldQ30" : 338115,
+       "QualityScoreSum" : 12591945,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "35",
+     "SampleName" : "35",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TGCAGTGG+AGCTTCTT",
+       "MismatchCounts" : {
+        "0" : 11634,
+        "1" : 259
+       }
+      }
+     ],
+     "NumberReads" : 11893,
+     "Yield" : 618436,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 309218,
+       "YieldQ30" : 285264,
+       "QualityScoreSum" : 10819697,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 309218,
+       "YieldQ30" : 277195,
+       "QualityScoreSum" : 10635768,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "36",
+     "SampleName" : "36",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ACTAGAGA+TGGCTTAT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "37",
+     "SampleName" : "37",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTTAACAC+TAGGCGGA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "38",
+     "SampleName" : "38",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CAGCATGG+CTCAGCAT",
+       "MismatchCounts" : {
+        "0" : 12412,
+        "1" : 461
+       }
+      }
+     ],
+     "NumberReads" : 12873,
+     "Yield" : 669396,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 334698,
+       "YieldQ30" : 326527,
+       "QualityScoreSum" : 12136441,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 334698,
+       "YieldQ30" : 323517,
+       "QualityScoreSum" : 11851849,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "39",
+     "SampleName" : "39",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ATGTTCCG+AATGCAGA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "4",
+     "SampleName" : "4",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTTACCGG+CGTCTTCA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "40",
+     "SampleName" : "40",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ATAGTCTG+TCCAATCT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "41",
+     "SampleName" : "41",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CGATGGTG+AAGTAGTG",
+       "MismatchCounts" : {
+        "0" : 12963,
+        "1" : 711
+       }
+      }
+     ],
+     "NumberReads" : 13674,
+     "Yield" : 711048,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 355524,
+       "YieldQ30" : 347581,
+       "QualityScoreSum" : 12893734,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 355524,
+       "YieldQ30" : 344873,
+       "QualityScoreSum" : 12600644,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "42",
+     "SampleName" : "42",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AGCATAGT+CAGTCGAG",
+       "MismatchCounts" : {
+        "0" : 40477,
+        "1" : 1072
+       }
+      }
+     ],
+     "NumberReads" : 41549,
+     "Yield" : 2160548,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 1080274,
+       "YieldQ30" : 1049702,
+       "QualityScoreSum" : 38874631,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 1080274,
+       "YieldQ30" : 1059348,
+       "QualityScoreSum" : 39484422,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "43",
+     "SampleName" : "43",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TGCGAGGA+TACGGTTA",
+       "MismatchCounts" : {
+        "0" : 49527,
+        "1" : 990
+       }
+      }
+     ],
+     "NumberReads" : 50517,
+     "Yield" : 2626884,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 1313442,
+       "YieldQ30" : 1213254,
+       "QualityScoreSum" : 45999919,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 1313442,
+       "YieldQ30" : 1188147,
+       "QualityScoreSum" : 45355550,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "44",
+     "SampleName" : "44",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AAGGAGTG+TTGAACAG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "45",
+     "SampleName" : "45",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TTGTTGAG+ACGCGGTT",
+       "MismatchCounts" : {
+        "0" : 1132,
+        "1" : 43
+       }
+      }
+     ],
+     "NumberReads" : 1175,
+     "Yield" : 61100,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 30550,
+       "YieldQ30" : 29870,
+       "QualityScoreSum" : 1107972,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 30550,
+       "YieldQ30" : 29608,
+       "QualityScoreSum" : 1082879,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "46",
+     "SampleName" : "46",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTCTTACC+CGGAGATA",
+       "MismatchCounts" : {
+        "0" : 13778,
+        "1" : 474
+       }
+      }
+     ],
+     "NumberReads" : 14252,
+     "Yield" : 741104,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 370552,
+       "YieldQ30" : 361830,
+       "QualityScoreSum" : 13436676,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 370552,
+       "YieldQ30" : 358859,
+       "QualityScoreSum" : 13133792,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "47",
+     "SampleName" : "47",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CCTGACAA+CTTGAGCA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "48",
+     "SampleName" : "48",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCGCTTGT+CATATCGA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "49",
+     "SampleName" : "49",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TTCCAATC+TTACGCTA",
+       "MismatchCounts" : {
+        "0" : 18643,
+        "1" : 684
+       }
+      }
+     ],
+     "NumberReads" : 19327,
+     "Yield" : 1005004,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 502502,
+       "YieldQ30" : 491154,
+       "QualityScoreSum" : 18248309,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 502502,
+       "YieldQ30" : 486472,
+       "QualityScoreSum" : 17795823,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "5",
+     "SampleName" : "5",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCACGAAG+TTGATAGG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "50",
+     "SampleName" : "50",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TAACACCT+CCAACAAG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "51",
+     "SampleName" : "51",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ACGCCACA+CCGAACCA",
+       "MismatchCounts" : {
+        "0" : 19011,
+        "1" : 352
+       }
+      }
+     ],
+     "NumberReads" : 19363,
+     "Yield" : 1006876,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 503438,
+       "YieldQ30" : 463867,
+       "QualityScoreSum" : 17593235,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 503438,
+       "YieldQ30" : 450351,
+       "QualityScoreSum" : 17265351,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "52",
+     "SampleName" : "52",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TGCATACA+CTAGCTTA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "53",
+     "SampleName" : "53",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCCGTGTT+AGATGCCT",
+       "MismatchCounts" : {
+        "0" : 6966,
+        "1" : 272
+       }
+      }
+     ],
+     "NumberReads" : 7238,
+     "Yield" : 376376,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 188188,
+       "YieldQ30" : 183553,
+       "QualityScoreSum" : 6814523,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 188188,
+       "YieldQ30" : 182153,
+       "QualityScoreSum" : 6669950,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "54",
+     "SampleName" : "54",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCTTGCAT+TTCTTGGA",
+       "MismatchCounts" : {
+        "0" : 9080,
+        "1" : 562
+       }
+      }
+     ],
+     "NumberReads" : 9642,
+     "Yield" : 501384,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 250692,
+       "YieldQ30" : 245465,
+       "QualityScoreSum" : 9111235,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 250692,
+       "YieldQ30" : 243444,
+       "QualityScoreSum" : 8915561,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "55",
+     "SampleName" : "55",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCCATGGA+TGTCTGTG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "56",
+     "SampleName" : "56",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AGCAACAT+AGATTGAG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "57",
+     "SampleName" : "57",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTGAGAGG+TAGCTACG",
+       "MismatchCounts" : {
+        "0" : 15207,
+        "1" : 605
+       }
+      }
+     ],
+     "NumberReads" : 15812,
+     "Yield" : 822224,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 411112,
+       "YieldQ30" : 401546,
+       "QualityScoreSum" : 14919112,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 411112,
+       "YieldQ30" : 398194,
+       "QualityScoreSum" : 14557654,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "58",
+     "SampleName" : "58",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CAATGTGC+CTGTAATG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "59",
+     "SampleName" : "59",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTTCGGTC+CATCGTTA",
+       "MismatchCounts" : {
+        "0" : 52944,
+        "1" : 1000
+       }
+      }
+     ],
+     "NumberReads" : 53944,
+     "Yield" : 2805088,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 1402544,
+       "YieldQ30" : 1280763,
+       "QualityScoreSum" : 48809341,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 1402544,
+       "YieldQ30" : 1208420,
+       "QualityScoreSum" : 47280475,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "6",
+     "SampleName" : "6",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CCGGAACA+CGGTGGAA",
+       "MismatchCounts" : {
+        "0" : 10011,
+        "1" : 362
+       }
+      }
+     ],
+     "NumberReads" : 10373,
+     "Yield" : 539396,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 269698,
+       "YieldQ30" : 262759,
+       "QualityScoreSum" : 9756833,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 269698,
+       "YieldQ30" : 260342,
+       "QualityScoreSum" : 9528033,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "60",
+     "SampleName" : "60",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TGGCCTAC+TCTAAGCA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "61",
+     "SampleName" : "61",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTGTCTAT+ATCTAAGG",
+       "MismatchCounts" : {
+        "0" : 9709,
+        "1" : 531
+       }
+      }
+     ],
+     "NumberReads" : 10240,
+     "Yield" : 532480,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 266240,
+       "YieldQ30" : 259805,
+       "QualityScoreSum" : 9634538,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 266240,
+       "YieldQ30" : 258037,
+       "QualityScoreSum" : 9446574,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "62",
+     "SampleName" : "62",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CACGTGTG+ACAGCCTG",
+       "MismatchCounts" : {
+        "0" : 2024,
+        "1" : 91
+       }
+      }
+     ],
+     "NumberReads" : 2115,
+     "Yield" : 109980,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 54990,
+       "YieldQ30" : 53547,
+       "QualityScoreSum" : 1990131,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 54990,
+       "YieldQ30" : 53135,
+       "QualityScoreSum" : 1949013,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "63",
+     "SampleName" : "63",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTACCATA+CACACCTT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "64",
+     "SampleName" : "64",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TACTACAC+ATGACACG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "65",
+     "SampleName" : "65",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CGCTTCCT+ACCACTGA",
+       "MismatchCounts" : {
+        "0" : 16488,
+        "1" : 933
+       }
+      }
+     ],
+     "NumberReads" : 17421,
+     "Yield" : 905892,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 452946,
+       "YieldQ30" : 442279,
+       "QualityScoreSum" : 16410026,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 452946,
+       "YieldQ30" : 439909,
+       "QualityScoreSum" : 16096511,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "66",
+     "SampleName" : "66",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCGATGCC+ACGGTTGT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "67",
+     "SampleName" : "67",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ACGGAGGT+CGAGAGTT",
+       "MismatchCounts" : {
+        "0" : 18110,
+        "1" : 477
+       }
+      }
+     ],
+     "NumberReads" : 18587,
+     "Yield" : 966524,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 483262,
+       "YieldQ30" : 445678,
+       "QualityScoreSum" : 16908172,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 483262,
+       "YieldQ30" : 443205,
+       "QualityScoreSum" : 16824053,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "68",
+     "SampleName" : "68",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CCTCTTCT+TATTCTCG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "69",
+     "SampleName" : "69",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CGTTAATC+CCAAGTTA",
+       "MismatchCounts" : {
+        "0" : 16802,
+        "1" : 633
+       }
+      }
+     ],
+     "NumberReads" : 17435,
+     "Yield" : 906620,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 453310,
+       "YieldQ30" : 441036,
+       "QualityScoreSum" : 16398615,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 453310,
+       "YieldQ30" : 437052,
+       "QualityScoreSum" : 15998133,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "7",
+     "SampleName" : "7",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CGTCTGTG+TGAGATGG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "70",
+     "SampleName" : "70",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ATGATGAC+AAGCGGCA",
+       "MismatchCounts" : {
+        "0" : 2631,
+        "1" : 67
+       }
+      }
+     ],
+     "NumberReads" : 2698,
+     "Yield" : 140296,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 70148,
+       "YieldQ30" : 68714,
+       "QualityScoreSum" : 2549787,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 70148,
+       "YieldQ30" : 67838,
+       "QualityScoreSum" : 2485359,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "71",
+     "SampleName" : "71",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AACCATAG+TACCTAGA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "72",
+     "SampleName" : "72",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "ACCAGGTG+AGACCGTT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "73",
+     "SampleName" : "73",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TAACATGC+ACACTCAT",
+       "MismatchCounts" : {
+        "0" : 17865,
+        "1" : 659
+       }
+      }
+     ],
+     "NumberReads" : 18524,
+     "Yield" : 963248,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 481624,
+       "YieldQ30" : 469442,
+       "QualityScoreSum" : 17433292,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 481624,
+       "YieldQ30" : 464282,
+       "QualityScoreSum" : 17017359,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "74",
+     "SampleName" : "74",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCTAACGC+TCATCACT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "75",
+     "SampleName" : "75",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AGAATCAG+TACGACAG",
+       "MismatchCounts" : {
+        "0" : 44916,
+        "1" : 901
+       }
+      }
+     ],
+     "NumberReads" : 45817,
+     "Yield" : 2382484,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 1191242,
+       "YieldQ30" : 1095211,
+       "QualityScoreSum" : 41602831,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 1191242,
+       "YieldQ30" : 1071626,
+       "QualityScoreSum" : 41030329,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "76",
+     "SampleName" : "76",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CGAGGAAG+ATCAACTG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "77",
+     "SampleName" : "77",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TACGTGCA+CGTCATTG",
+       "MismatchCounts" : {
+        "0" : 19727,
+        "1" : 784
+       }
+      }
+     ],
+     "NumberReads" : 20511,
+     "Yield" : 1066572,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 533286,
+       "YieldQ30" : 521689,
+       "QualityScoreSum" : 19362385,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 533286,
+       "YieldQ30" : 516746,
+       "QualityScoreSum" : 18927546,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "78",
+     "SampleName" : "78",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTAACGTT+ATACCAGG",
+       "MismatchCounts" : {
+        "0" : 1588,
+        "1" : 83
+       }
+      }
+     ],
+     "NumberReads" : 1671,
+     "Yield" : 86892,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 43446,
+       "YieldQ30" : 42254,
+       "QualityScoreSum" : 1571087,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 43446,
+       "YieldQ30" : 41822,
+       "QualityScoreSum" : 1536810,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "79",
+     "SampleName" : "79",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCTAGATC+AGCTGATG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "8",
+     "SampleName" : "8",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TTGGTCTA+CCTACTAT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "80",
+     "SampleName" : "80",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AATTCCGC+TGGTGTCG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "81",
+     "SampleName" : "81",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTCACAAC+TGGTAGCT",
+       "MismatchCounts" : {
+        "0" : 12357,
+        "1" : 423
+       }
+      }
+     ],
+     "NumberReads" : 12780,
+     "Yield" : 664560,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 332280,
+       "YieldQ30" : 323373,
+       "QualityScoreSum" : 11991737,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 332280,
+       "YieldQ30" : 324362,
+       "QualityScoreSum" : 12083983,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "82",
+     "SampleName" : "82",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CAAGATTG+CGAAGGTG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "83",
+     "SampleName" : "83",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCGCGATA+CGGCTAGT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "84",
+     "SampleName" : "84",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "AGATAAGC+AAGCTTGG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "85",
+     "SampleName" : "85",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TTACAGAG+AGTGCCAG",
+       "MismatchCounts" : {
+        "0" : 10669,
+        "1" : 463
+       }
+      }
+     ],
+     "NumberReads" : 11132,
+     "Yield" : 578864,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 289432,
+       "YieldQ30" : 281919,
+       "QualityScoreSum" : 10467116,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 289432,
+       "YieldQ30" : 279333,
+       "QualityScoreSum" : 10227334,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "86",
+     "SampleName" : "86",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TACCGTCC+CTCATGAA",
+       "MismatchCounts" : {
+        "0" : 533,
+        "1" : 17
+       }
+      }
+     ],
+     "NumberReads" : 550,
+     "Yield" : 28600,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 14300,
+       "YieldQ30" : 14001,
+       "QualityScoreSum" : 520008,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 14300,
+       "YieldQ30" : 13923,
+       "QualityScoreSum" : 508652,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "87",
+     "SampleName" : "87",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TATCTCCA+TCTCACGG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "88",
+     "SampleName" : "88",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TGCCTCAA+CGTGATAA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "89",
+     "SampleName" : "89",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TCTTCCTG+TTCCAACG",
+       "MismatchCounts" : {
+        "0" : 35366,
+        "1" : 1043
+       }
+      }
+     ],
+     "NumberReads" : 36409,
+     "Yield" : 1893268,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 946634,
+       "YieldQ30" : 920198,
+       "QualityScoreSum" : 34109461,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 946634,
+       "YieldQ30" : 927723,
+       "QualityScoreSum" : 34554310,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "9",
+     "SampleName" : "9",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TAGGCTAA+AAGAGCAT",
+       "MismatchCounts" : {
+        "0" : 7605,
+        "1" : 317
+       }
+      }
+     ],
+     "NumberReads" : 7922,
+     "Yield" : 411944,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 205972,
+       "YieldQ30" : 200499,
+       "QualityScoreSum" : 7448361,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 205972,
+       "YieldQ30" : 197642,
+       "QualityScoreSum" : 7256727,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "90",
+     "SampleName" : "90",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TTATCCGT+CACGTGCA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "91",
+     "SampleName" : "91",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TTACCACT+TGTAGACA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "92",
+     "SampleName" : "92",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "TACTCGAA+TCATCCGA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "93",
+     "SampleName" : "93",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CAAGCGAG+TTCGGCTT",
+       "MismatchCounts" : {
+        "0" : 1625,
+        "1" : 55
+       }
+      }
+     ],
+     "NumberReads" : 1680,
+     "Yield" : 87360,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 43680,
+       "YieldQ30" : 42715,
+       "QualityScoreSum" : 1585927,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 43680,
+       "YieldQ30" : 42405,
+       "QualityScoreSum" : 1550867,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "94",
+     "SampleName" : "94",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CTAGTCCT+TCAGGCGT",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "95",
+     "SampleName" : "95",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CGTGTACC+ATCCGGAA",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    },
+    {
+     "SampleId" : "96",
+     "SampleName" : "96",
+     "IndexMetrics" : [
+      {
+       "IndexSequence" : "CGGCAAGA+AAGGAAGG",
+       "MismatchCounts" : {
+        "0" : 0,
+        "1" : 0
+       }
+      }
+     ],
+     "NumberReads" : 0,
+     "Yield" : 0,
+     "ReadMetrics" : [
+      {
+       "ReadNumber" : 1,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      },
+      {
+       "ReadNumber" : 2,
+       "Yield" : 0,
+       "YieldQ30" : 0,
+       "QualityScoreSum" : 0,
+       "TrimmedBases" : 0
+      }
+     ]
+    }
+   ],
+   "Undetermined" : {
+    "NumberReads" : 39915,
+    "Yield" : 2075580,
+    "ReadMetrics" : [
+     {
+      "ReadNumber" : 1,
+      "Yield" : 1037790,
+      "YieldQ30" : 788529,
+      "QualityScoreSum" : 32591022,
+      "TrimmedBases" : 0
+     },
+     {
+      "ReadNumber" : 2,
+      "Yield" : 1037790,
+      "YieldQ30" : 775960,
+      "QualityScoreSum" : 32084946,
+      "TrimmedBases" : 0
+     }
+    ]
+   }
+  }
+ ],
+ "UnknownBarcodes" : [
+  {
+   "Lane" : 1,
+   "Barcodes" : {
+    "ATCTCGTA+TCTTTCCC" : 10680,
+    "TGAGAGGA+TAAGGGGA" : 100,
+    "TCTTCCTG+CATCGTTA" : 100,
+    "TAACATGC+ACTCATAC" : 100,
+    "CTTCTTTC+CCTCTTTC" : 100,
+    "ATATCGTA+TCTTTCCC" : 100,
+    "TACCTGGT+TCTTTCCC" : 80,
+    "CTGCGAGG+TACGGTTA" : 80,
+    "CGCTTCCT+CACTGAAC" : 80,
+    "TTCTCTTC+TCCTTTTC" : 60,
+    "TTAGAGGC+AAGGTCTG" : 60,
+    "TACTGGTA+TGAGGTCT" : 60,
+    "AGAAGAAG+TAAGAAAG" : 60,
+    "ACGCCACA+CGAACCAA" : 60,
+    "TTCCAATC+TTACGGCT" : 40,
+    "TGCGAGGA+TCTTTCCC" : 40,
+    "TGCGAGGA+TACCGGTT" : 40,
+    "TGCAGTGG+AGGCTTCT" : 40,
+    "TCTTTCCT+TTCCAACG" : 40,
+    "TCTTCCTT+TTCCCCCT" : 40,
+    "TCTTCCCT+TTCCAACG" : 40,
+    "TCCTTCTG+TTCCAACG" : 40,
+    "TCCCTTTT+TTCTTTCT" : 40,
+    "TACGATTC+GGAAGAGA" : 40,
+    "TACGATTC+CGGGAAGA" : 40,
+    "TACGAATT+CGGAAGAG" : 40,
+    "TACCTGGT+TGAGGGTC" : 40,
+    "TACCTGGT+CGAGGGCT" : 40,
+    "GCGAGGAA+TACGGTTA" : 40,
+    "CTTTCTCT+ATCTCCTG" : 40,
+    "CTTTCCTG+TTCCATCG" : 40,
+    "CTTCTCTT+TCTCTCCT" : 40,
+    "CTTCGGTC+CTCGTTAA" : 40,
+    "CTCTTACC+CGAAGCTA" : 40,
+    "CTCTCCCC+TTTTCTCC" : 40,
+    "CTCCCCCC+CCCCCCCC" : 40,
+    "CTAGTGGT+AAGGCTTG" : 40,
+    "CGGGAATA+CGGAGGAA" : 40,
+    "CGCTTCCT+CCACTGAA" : 40,
+    "CGCTTCCT+CATCGTTA" : 40,
+    "CGATGGTG+CGTCATTG" : 40,
+    "CCGGAACA+CGTCATTG" : 40,
+    "CCGGAACA+CGGTGTAG" : 40,
+    "CCGCATGA+CTCAGCAT" : 40,
+    "CCAGAACT+CGGCCTAA" : 40,
+    "CAGGAAAA+CGGGGGAA" : 40,
+    "CAGCATGG+TCAACTCA" : 40,
+    "CAGAAGGG+CGAAGAAA" : 40,
+    "CACAATCG+AAGGTCTG" : 40,
+    "ATCTCGTA+TCTTCCCC" : 40,
+    "ATCTCGTA+CCTTTCCC" : 40,
+    "ATCATACC+CAGTCTAG" : 40,
+    "AGCTCGGA+TCTTTCCC" : 40,
+    "AGAAAGAG+TAAGAAAG" : 40,
+    "ACTGGAAT+CTCTGTGA" : 40,
+    "ACCTCGTA+TCTTTCCC" : 40,
+    "AAGATGGT+TCGATAAC" : 40,
+    "TTTTTCTT+CTCCACTT" : 20,
+    "TTTTCCTC+TTCTCTCG" : 20,
+    "TTTGGGGG+TACGGTTA" : 20,
+    "TTTACAGA+AGTGCCAG" : 20,
+    "TTGGTGGT+ACGGTGTG" : 20,
+    "TTGGTGAG+ACGAGGTA" : 20,
+    "TTGGAAGA+AGGGGCTA" : 20,
+    "TTGCTGTC+TTTCGCTA" : 20,
+    "TTGCGAGG+TACGGTTA" : 20,
+    "TTGCCTAT+ATTTAAGG" : 20,
+    "TTGCCTAT+ATCTCCGG" : 20,
+    "TTGCCTAT+AGTGAAGG" : 20,
+    "TTGCCTAT+ACACTCGG" : 20,
+    "TTGCATTC+ATACAAGG" : 20,
+    "TTGCATAT+ATCTACAG" : 20,
+    "TTGCAGAT+CGACTGAA" : 20,
+    "TTGATGTC+TTTCGCTA" : 20,
+    "TTGATGGT+ACTCGCTA" : 20,
+    "TTGATGCT+ACGCCCCG" : 20,
+    "TTGAGAGG+TAGTTAGG" : 20,
+    "TTGAGAGG+AAGGTATG" : 20,
+    "TTGAGAAT+TAGCTGCG" : 20,
+    "TTGAAGGG+AGTCGACG" : 20,
+    "TTCTTCCT+TTCCAACG" : 20,
+    "TTCTTACT+CCGCCACA" : 20,
+    "TTCTCTTA+TACTTTTA" : 20,
+    "TTCTCGTA+TCTTTCCC" : 20,
+    "TTCTCGGT+TACTGATA" : 20,
+    "TTCTCCTG+TTGCAACG" : 20,
+    "TTCTCCTG+TCTTAACG" : 20,
+    "TTCTAATG+TTACGCTG" : 20,
+    "TTCGTGGT+CAGGACTG" : 20,
+    "TTCGTGGT+AGGTGCTG" : 20,
+    "TTCGTGGA+AGGCATTG" : 20,
+    "TTCGTGCA+CGGCGTTA" : 20,
+    "TTCGGTCA+CATCGTTA" : 20,
+    "TTCGGGTA+CACGGTTA" : 20,
+    "TTCGATTC+CGGTCTAG" : 20,
+    "TTCGAGTT+TGATGCCA" : 20,
+    "TTCGAATT+TTACGCTA" : 20,
+    "TTCGAATT+AAAGGCTA" : 20,
+    "TTCCTTTT+CTCTTCTT" : 20,
+    "TTCCTGGT+AGATGCTT" : 20,
+    "TTCCGTTC+TTCCGCTA" : 20,
+    "TTCCGTTA+ATCGGTTA" : 20,
+    "TTCCGGTC+TTACGCTA" : 20,
+    "TTCCGGTC+CATCGTTA" : 20,
+    "TTCCGGTA+CATCGTTA" : 20,
+    "TTCCCTCG+AGTGCCCG" : 20,
+    "TTCCCCTC+TTCCTCTC" : 20,
+    "TTCCCATA+TTAAGCTA" : 20,
+    "TTCCCAAT+TTACGCTA" : 20,
+    "TTCCATTT+TTATGAGA" : 20,
+    "TTCCATCA+TTACGCTA" : 20,
+    "TTCCAGGC+TGAGGCTA" : 20,
+    "TTCCAGCC+CTACATTA" : 20,
+    "TTCCACTT+TCACCTTA" : 20,
+    "TTCCACTT+TCACCCTA" : 20,
+    "TTCCACTC+TTCCTCTA" : 20,
+    "TTCCAATT+TTATGCCA" : 20,
+    "TTCCAATC+TTACTATA" : 20,
+    "TTCCAATC+TTACGTGA" : 20,
+    "TTCCAATC+TTACCGCT" : 20,
+    "TTCCAATC+TTAAGCCA" : 20,
+    "TTCCAATC+TTAACGCT" : 20,
+    "TTCCAATC+TGAGGCTA" : 20,
+    "TTCCAATC+TCACGCGA" : 20,
+    "TTCCAATC+CGACGCTA" : 20,
+    "TTCCAACA+CTACATTG" : 20,
+    "TTCCAAAT+TTACGCTA" : 20,
+    "TTCACAAC+TGGGGGCT" : 20,
+    "TTATGGGT+AAGTTCTG" : 20,
+    "TTATCGTT+AAGGTCTG" : 20,
+    "TTATAGGT+CAAATCTA" : 20,
+    "TTATAAAG+ACGCGGAA" : 20,
+    "TTAGTGTA+AAGGTCTG" : 20,
+    "TTAGTGGT+TAGGGCTG" : 20,
+    "TTAGTGGT+CCAAGTTA" : 20,
+    "TTAGTGGT+CAGATCTA" : 20,
+    "TTAGTGGT+ATGGGCTG" : 20,
+    "TTAGTGGT+ACGGGCTG" : 20,
+    "TTAGTGGT+ACGGCACG" : 20,
+    "TTAGTGGT+AAGGGTCT" : 20,
+    "TTAGTGGT+AAGGGCTT" : 20,
+    "TTAGTGGT+AAGGCTTG" : 20,
+    "TTAGTGCT+AAGCCCCG" : 20,
+    "TTAGTGAG+AAGGTCTG" : 20,
+    "TTAGTAGC+CGGGGCTG" : 20,
+    "TTAGGGTA+AACGGCTG" : 20,
+    "TTAGCTAT+AAGGTCTT" : 20,
+    "TTAGCGGA+AGGTGCAA" : 20,
+    "TTAGATGG+ATGAGCTG" : 20,
+    "TTAGAGTC+ATGCTCTG" : 20,
+    "TTAGAGGT+CAGGGCTG" : 20,
+    "TTAGAGGT+AGGGCCTG" : 20,
+    "TTAGAGGT+ACAGTCTG" : 20,
+    "TTAGAGGT+AACGGCTG" : 20,
+    "TTAGAGGC+ACGGTCTG" : 20,
+    "TTAGAGGA+TTAGGCTT" : 20,
+    "TTAGAGAG+AGGGAGAG" : 20,
+    "TTAGAAGT+AAATGCTA" : 20,
+    "TTAGAAGG+TAGGGCTG" : 20,
+    "TTACTTGG+CAGAGCTG" : 20,
+    "TTACTGGC+AAGGTCTG" : 20,
+    "TTACGATT+CGGAAGAG" : 20,
+    "TTACATTC+ACACGCAA" : 20,
+    "TTACATGC+ACGCTCTT" : 20,
+    "TTACAGGT+AGTGCCTG" : 20,
+    "TTACAGGG+AGGCCCAG" : 20,
+    "TTACAGCT+AGTGCCAG" : 20,
+    "TTACAGAG+TTCGGCTT" : 20,
+    "TTACAGAG+AGTGTACG" : 20,
+    "TTACAGAG+AGCGCTAG" : 20,
+    "TTACAGAG+AGAGGCAA" : 20,
+    "TTACACAT+AGTACCAA" : 20,
+    "TTAATGCA+AAGGCGTT" : 20,
+    "TTAAGGGG+AAGGTCTG" : 20,
+    "TTAAAATA+ATAAAAAA" : 20,
+    "TGTTTTCT+ACCACTCT" : 20,
+    "TGTTTCTG+TACCACAG" : 20,
+    "TGTTATTC+CCAAGCTA" : 20,
+    "TGTTAATT+CCAAGTTA" : 20,
+    "TGTGCGGA+TTCGGACA" : 20,
+    "TGTGATTT+CGGAAGAG" : 20,
+    "TGTAGCAT+TTCTTGAG" : 20,
+    "TGGTGCTA+AGCGGTGT" : 20,
+    "TGGGTGCT+ACCACTTA" : 20,
+    "TGGGGGTT+CGAGGCGT" : 20,
+    "TGGGGGGA+TGCAGAGG" : 20,
+    "TGGGCTGA+AAGAGCAG" : 20,
+    "TGGGAAAG+TGGGAGAG" : 20,
+    "TGGCGTTA+AGCGGCGA" : 20,
+    "TGGAGTTT+CGCGGTGA" : 20,
+    "TGGAGTCT+ACTCCACA" : 20,
+    "TGGAGGCA+AGTGGTTA" : 20,
+    "TGGACAGG+TAAAAACG" : 20,
+    "TGGAATAT+TCTGTGAA" : 20,
+    "TGCTTGCT+ACCAATGA" : 20,
+    "TGCTTCTT+ATCACCTA" : 20,
+    "TGCTTCTG+CACTAACG" : 20,
+    "TGCTTCGT+CAGTCGCG" : 20,
+    "TGCTTCCT+ACTACTTA" : 20,
+    "TGCTTCCT+ACCACTTT" : 20,
+    "TGCTTCCT+AACTGAAC" : 20,
+    "TGCTTAGG+CAGTCAAG" : 20,
+    "TGCTGGCA+CAGCATTG" : 20,
+    "TGCTCTCT+ACCACCGA" : 20,
+    "TGCTCCGG+AGCTTCTT" : 20,
+    "TGCTAATC+CTAAGCTA" : 20,
+    "TGCTAATC+CGACGTTG" : 20,
+    "TGCGTGCA+CGCAATTG" : 20,
+    "TGCGTCCT+ACCACTGA" : 20,
+    "TGCGAGGA+TCGGTTAA" : 20,
+    "TGCGAGGA+TAGGTTAA" : 20,
+    "TGCGAGGA+TACGTTAA" : 20,
+    "TGCGAGGA+TAAGGGTA" : 20,
+    "TGCGAGGA+TAACGGTT" : 20,
+    "TGCGAGGA+GGTTAACA" : 20,
+    "TGCGAGGA+CACGGGAA" : 20,
+    "TGCGAGGA+AACGGGTA" : 20,
+    "TGCCTCTT+ATAACTGA" : 20,
+    "TGCCTAGT+TAGGGGCG" : 20,
+    "TGCCGTGC+ACACTAGG" : 20,
+    "TGCCATGC+CACCTCTA" : 20,
+    "TGCCATCC+ACCACCAA" : 20,
+    "TGCCACTC+TACGACTG" : 20,
+    "TGCCAAGC+TTACGCTA" : 20,
+    "TGCATTTC+CGGGAGAG" : 20,
+    "TGCATTTC+CAGAAGAG" : 20,
+    "TGCATGGT+CAGGCGCG" : 20,
+    "TGCATCTC+TTCGACAG" : 20,
+    "TGCATAGT+TGGTCTAT" : 20,
+    "TGCATAGT+TAGTTGCG" : 20,
+    "TGCATAGT+CTGTCGGG" : 20,
+    "TGCATAGT+CAGTAACG" : 20,
+    "TGCATAGA+CAGCAGAG" : 20,
+    "TGCAGTGG+TCTTTCCC" : 20,
+    "TGCAGTGG+GCTTCTTA" : 20,
+    "TGCAGTGG+CAGCTTCT" : 20,
+    "TGCAGTGG+AGGTTGTG" : 20,
+    "TGCAATGG+ATATTCTT" : 20,
+    "TGCAAATG+TTAGGCTA" : 20,
+    "TGCAAAGA+TACGGGTA" : 20,
+    "TGATGGTG+AAGAAGAG" : 20,
+    "TGATGGGG+AAGTACTG" : 20,
+    "TGATGGCT+AAGAAGAC" : 20,
+    "TGATGGCG+AAGTAGTG" : 20,
+    "TGATGGAG+AAGTCGTG" : 20,
+    "TGATGCTG+TACCAGCG" : 20,
+    "TGATGAGG+TTCTTTTG" : 20,
+    "TGATATTC+ACACGCTA" : 20,
+    "TGATACCT+ACCACTGA" : 20,
+    "TGATAATC+CCAAGCTA" : 20,
+    "TGAGTGGT+TACGACTG" : 20,
+    "TGAGTGGT+AAGAGCTG" : 20,
+    "TGAGTGGG+AAGGTCTG" : 20,
+    "TGAGGGGA+AGAGGGGG" : 20,
+    "TGAGAGGA+TAGGGAGA" : 20,
+    "TGAGAGGA+TAGCTACG" : 20,
+    "TGAGAGGA+TAAGGCTA" : 20,
+    "TGACGTTA+ACCCTCAT" : 20,
+    "TGACATTC+ACAAGCAT" : 20,
+    "TGACAGGC+ACACGCAT" : 20,
+    "TGACAATC+CCAAGCAA" : 20,
+    "TGACAAGG+TAACACTG" : 20,
+    "TGACAAAG+AGAGGCAA" : 20,
+    "TGAATGAG+AAGGACAG" : 20,
+    "TGAATAAA+TCTTTCCC" : 20,
+    "TGAAGGGG+AGAGGAGT" : 20,
+    "TGAAGAAC+TACGACAG" : 20,
+    "TGAAAGAG+AGAGAGAG" : 20,
+    "TGAAAAGA+TGAAGAGA" : 20,
+    "TCTTTTTC+TCCTATCG" : 20,
+    "TCTTTCTT+TTCCCCCT" : 20,
+    "TCTTTCTT+TTCCAACG" : 20,
+    "TCTTTCTG+CTCTAACG" : 20,
+    "TCTTTACT+CTGTTGTA" : 20,
+    "TCTTGCAT+TTTTTGCA" : 20,
+    "TCTTGCAT+TTCTTGTG" : 20,
+    "TCTTGCAT+TTCTTGCG" : 20,
+    "TCTTGCAT+TCTTTGGA" : 20,
+    "TCTTGCAT+CGCTTTTG" : 20,
+    "TCTTGCAT+AAGCGGCA" : 20,
+    "TCTTGAGT+TTCTTGGG" : 20,
+    "TCTTCTTG+TTCCTACT" : 20,
+    "TCTTCTTC+TTCCTACT" : 20,
+    "TCTTCTGA+TTCCAACG" : 20,
+    "TCTTCCTT+TTGTACCG" : 20,
+    "TCTTCCTT+TTACTACA" : 20,
+    "TCTTCCTG+TTTCCAAC" : 20,
+    "TCTTCCTG+TTCCCACT" : 20,
+    "TCTTCCTG+TACCAAAG" : 20,
+    "TCTTCCTG+CTTTGTTT" : 20,
+    "TCTTCCTG+ATCCAAGG" : 20,
+    "TCTTCCTG+AAGGTCTG" : 20,
+    "TCTTCCGT+TGCCGACT" : 20,
+    "TCTTCCGT+TGACAACG" : 20,
+    "TCTTCCAT+TTGCGAGG" : 20,
+    "TCTTCATG+TGCCATCG" : 20,
+    "TCTTACTG+TTCCCTAA" : 20,
+    "TCTGGGCT+CGGGATTG" : 20,
+    "TCTGCTTC+CTCCAGAG" : 20,
+    "TCTGCCTT+TCTGTGCA" : 20,
+    "TCTGACTA+TTCCGACA" : 20,
+    "TCTCTCTG+TTCGAACG" : 20,
+    "TCTCCTGA+TTCCAACG" : 20,
+    "TCGTTTTT+ATATAAGG" : 20,
+    "TCGTTCAT+ATCTTGGT" : 20,
+    "TCGTGTAT+ATCTTAGG" : 20,
+    "TCGTGGCT+ATCTTACG" : 20,
+    "TCGTGCGT+TTCTTAGG" : 20,
+    "TCGTCCTT+TACCAGAG" : 20,
+    "TCGTAACT+CTCTTGAA" : 20,
+    "TCGGAGCA+CGTGGGAG" : 20,
+    "TCGAGAGG+TAGCAACG" : 20,
+    "TCCTTTCC+CTTCCTTT" : 20,
+    "TCCTTTCA+CGTCATTT" : 20,
+    "TCCTTGTG+TTCCAACT" : 20,
+    "TCCTTCCT+ACTTCTTT" : 20,
+    "TCCTTATG+CAGTAAAG" : 20,
+    "TCCTGCCT+CTCTTTGG" : 20,
+    "TCCTGCAT+CTCTTTTA" : 20,
+    "TCCTCTTC+CTTCCTCC" : 20,
+    "TCCTCTTC+CGGAAGAG" : 20,
+    "TCCTCTTC+CCTCCTCC" : 20,
+    "TCCTCCGG+TACCAACG" : 20,
+    "TCCTACCA+CATCTTTG" : 20,
+    "TCCGTGTT+TGCTACCT" : 20,
+    "TCCGTGTT+TCAACTCA" : 20,
+    "TCCGTGTT+CGATACCT" : 20,
+    "TCCGTGTT+AGATGCTA" : 20,
+    "TCCGTGTT+AGATACCG" : 20,
+    "TCCGTGTT+AAGGTCTG" : 20,
+    "TCCGTGGT+AAGGTCCG" : 20,
+    "TCCGTATT+CGGTGCCT" : 20,
+    "TCCGCTTA+CGGAAGAA" : 20,
+    "TCCGCGTT+AGATAACT" : 20,
+    "TCCGCATA+TCCGATTA" : 20,
+    "TCCGATTC+CGAGAGAT" : 20,
+    "TCCGAGGT+AGATGCCT" : 20,
+    "TCCGAACA+CGGCGTTG" : 20,
+    "TCCCTGTT+TTATATCT" : 20,
+    "TCCCTGTT+TGCGATCT" : 20,
+    "TCCCTGTG+TTCGGACT" : 20,
+    "TCCCTGAT+CAACTGCA" : 20,
+    "TCCCTCTT+TAATTTCT" : 20,
+    "TCCCTCTG+TTCCAACG" : 20,
+    "TCCCTCCC+CCCCCTTT" : 20,
+    "TCCCTCAT+CAACTGCT" : 20,
+    "TCCCTAAT+TGAGTGCT" : 20,
+    "TCCCCTTC+CCCCTCCT" : 20,
+    "TCCCCTTC+ACCCTCCT" : 20,
+    "TCCCCTCG+CCCTTCCT" : 20,
+    "TCCCAATT+CCAACTTT" : 20,
+    "TCCCAACA+CCAAACCA" : 20,
+    "TCCAAGCA+CGAACTCA" : 20,
+    "TCATGCAT+TACTTGGG" : 20,
+    "TCATCCTG+TGCCAACA" : 20,
+    "TCATAATG+TTCCAACA" : 20,
+    "TCAGTGGT+ATATGCCT" : 20,
+    "TCAGGCAT+AGGTCGTT" : 20,
+    "TCAGAGGA+AAGGGCTG" : 20,
+    "TCAGAATT+TGGGGTCA" : 20,
+    "TCAGAATC+TGGCCTAA" : 20,
+    "TCAGAATC+TGCCATCA" : 20,
+    "TCACGCAT+ACCCTCGT" : 20,
+    "TCACCCTC+ACACTCAT" : 20,
+    "TCACATGA+CCACTCAT" : 20,
+    "TCACAGAT+TGCGCCAG" : 20,
+    "TATTGCAA+TTGTGGGA" : 20,
+    "TATTCTTC+CGGAAAAG" : 20,
+    "TATTCCGT+TGCCGACT" : 20,
+    "TATTAGTC+CGAAGTTA" : 20,
+    "TATTACAT+TTCTTTGA" : 20,
+    "TATGTGTA+CGTCATTT" : 20,
+    "TATGTGTA+CGTCATTG" : 20,
+    "TATGGTTC+CGGAAGAG" : 20,
+    "TATGGGTC+CGTAAGAA" : 20,
+    "TATGCGTG+TGCCAACG" : 20,
+    "TATCTGTG+TGCCGTCT" : 20,
+    "TATCTCAA+TTGTGCGT" : 20,
+    "TATCGGTC+CATCGTTA" : 20,
+    "TATCCGGG+TGAGAACG" : 20,
+    "TATCCGGA+TGAGGCGT" : 20,
+    "TATAGTCT+ACTTCACG" : 20,
+    "TATAAACA+TCCTGTGT" : 20,
+    "TAGTGGGT+ACTGCATT" : 20,
+    "TAGTGAGG+AAGGTACT" : 20,
+    "TAGTAGTT+ACACCATG" : 20,
+    "TAGGTGGT+AGATGATT" : 20,
+    "TAGGTGCA+CGTCGTTA" : 20,
+    "TAGGTGAA+CGTTAAGG" : 20,
+    "TAGGGTAT+AAGACGAT" : 20,
+    "TAGGCTAA+AACAGCTT" : 20,
+    "TAGGATTA+AAGAGCAT" : 20,
+    "TAGGAGTC+CGGAAGAG" : 20,
+    "TAGGAGGT+CGGAAGAG" : 20,
+    "TAGCTGAT+TAAGTGAA" : 20,
+    "TAGCAGTC+ATACGCTG" : 20,
+    "TAGATGGT+TCTTGACT" : 20,
+    "TAGATGCT+TCTCCATA" : 20,
+    "TAGATGCT+CGTCCACT" : 20,
+    "TAGATGCT+ACGCGGCA" : 20,
+    "TAGAGTGC+ACACTCAT" : 20,
+    "TAGAGGCT+TCCACGAC" : 20,
+    "TAGAGGCT+ACCCCAGG" : 20,
+    "TAGAGGAG+AAGAAAAG" : 20,
+    "TAGAGACT+ACGCCACA" : 20,
+    "TAGAATCT+ACTCCACG" : 20,
+    "TAGAATCG+ACTCCACA" : 20,
+    "TAGAACCA+TGGTCTAA" : 20,
+    "TACTTTCC+CTTCCTTT" : 20,
+    "TACTTCTG+TGAGAACG" : 20,
+    "TACTGTAG+ACGACTCT" : 20,
+    "TACTGGCG+CAGCAGTT" : 20,
+    "TACTGCCA+CGGCATTT" : 20,
+    "TACTGCAA+CGTCATTG" : 20,
+    "TACTGCAA+CGCTTGTA" : 20,
+    "TACTCTCC+CGGAGAAT" : 20,
+    "TACTCGTA+CGTTATAC" : 20,
+    "TACTCGCG+CGCCATTG" : 20,
+    "TACTCCTG+CGCCAACG" : 20,
+    "TACTCACA+CGGAGAAA" : 20,
+    "TACTAGTA+CGACATTG" : 20,
+    "TACTAGGA+TACCATTG" : 20,
+    "TACTAGCA+CGACATTG" : 20,
+    "TACTACTG+TTAGCCTT" : 20,
+    "TACTACCG+CCAACTTA" : 20,
+    "TACGTTTC+CGCCATTG" : 20,
+    "TACGTTGC+CGTCATTG" : 20,
+    "TACGTTCA+CGGAATAG" : 20,
+    "TACGTGGT+TTGGGTCT" : 20,
+    "TACGTGGC+CGTCATTG" : 20,
+    "TACGTGCA+CTTCATTT" : 20,
+    "TACGTGCA+CTCAGCAT" : 20,
+    "TACGTGCA+CGTTTTTG" : 20,
+    "TACGTGCA+CGTCATGA" : 20,
+    "TACGTGCA+CGGCATCG" : 20,
+    "TACGTGCA+CGACGCCT" : 20,
+    "TACGTGCA+CGAAGTTA" : 20,
+    "TACGTGCA+CGAAATTG" : 20,
+    "TACGTGCA+CCGTCATT" : 20,
+    "TACGTGCA+CCAAGTTA" : 20,
+    "TACGTGAA+CGGCCTTT" : 20,
+    "TACGTACC+CGTCATTG" : 20,
+    "TACGGTTC+CGTCAGTG" : 20,
+    "TACGGTAT+TGAGGTCT" : 20,
+    "TACGGGTC+CGGAAGAG" : 20,
+    "TACGGGCT+CGCTTGAT" : 20,
+    "TACGCTTC+CGGAAACG" : 20,
+    "TACGCTTA+CGGCATAG" : 20,
+    "TACGCTCA+CGCTATTG" : 20,
+    "TACGCTAA+CAGCACTT" : 20,
+    "TACGCCAA+ATCATCAA" : 20,
+    "TACGATTG+TGGAAGCG" : 20,
+    "TACGATTG+CGCTTCTT" : 20,
+    "TACGATTG+AGGAAGCG" : 20,
+    "TACGATTC+CGGTCGAG" : 20,
+    "TACGATTC+CGGCATAG" : 20,
+    "TACGATTC+CGGAAGGA" : 20,
+    "TACGATTC+CCACACAG" : 20,
+    "TACGATTC+CAGGAGAG" : 20,
+    "TACGATGA+CGACATTT" : 20,
+    "TACGAGTA+TTACGCTG" : 20,
+    "TACGAGTA+TGGAATTG" : 20,
+    "TACGAGTA+CGACACTG" : 20,
+    "TACGAGGT+TGAGGTCT" : 20,
+    "TACGAGGC+CGGAAGAG" : 20,
+    "TACGAGGA+CAGGGTTA" : 20,
+    "TACGAGCA+CGTTATAG" : 20,
+    "TACGAAGC+CGGCAGAG" : 20,
+    "TACCTTGT+TGCGTTCT" : 20,
+    "TACCTTGG+TGAGGTCT" : 20,
+    "TACCTGTA+TGAGGTCT" : 20,
+    "TACCTGGT+TTATGTCT" : 20,
+    "TACCTGGT+TGCGGTCG" : 20,
+    "TACCTGGT+TGCGGACT" : 20,
+    "TACCTGGT+TGATATCT" : 20,
+    "TACCTGGT+TGAGGTTA" : 20,
+    "TACCTGGT+TGAGGGTA" : 20,
+    "TACCTGGT+TGAGGCCC" : 20,
+    "TACCTGGT+TGAGAACT" : 20,
+    "TACCTGGT+TATGGTTA" : 20,
+    "TACCTGGT+TAGGTCTA" : 20,
+    "TACCTGGT+TAAGGGCT" : 20,
+    "TACCTGGT+GAGGTCTA" : 20,
+    "TACCTGGT+CGGTGGCT" : 20,
+    "TACCTGGT+CGATGGCT" : 20,
+    "TACCTGGT+CGATCTCT" : 20,
+    "TACCTGGT+CGAGCGCT" : 20,
+    "TACCTGGT+CGACGTCT" : 20,
+    "TACCTGGT+AGAGGCCT" : 20,
+    "TACCTGGT+AAGGCGCT" : 20,
+    "TACCTGGG+TGAGGACG" : 20,
+    "TACCTGGC+TATCGTCT" : 20,
+    "TACCTGGC+ACACGCAT" : 20,
+    "TACCTGCC+CATCTTTG" : 20,
+    "TACCTGCA+TGACATTT" : 20,
+    "TACCTGAT+TTGTGTGT" : 20,
+    "TACCTCTT+TTCGTTCT" : 20,
+    "TACCTAGT+TGGTCTAA" : 20,
+    "TACCTAGT+TGGGGTTT" : 20,
+    "TACCTAGT+TAAGCTCT" : 20,
+    "TACCGTTC+CATCGTCA" : 20,
+    "TACCGGTA+TGAGGTCT" : 20,
+    "TACCGGGG+TGAGGTCA" : 20,
+    "TACCGGGA+TGGGGACT" : 20,
+    "TACCCTGG+TGAGGTCT" : 20,
+    "TACCCGTG+TGACAACG" : 20,
+    "TACCCGGC+TGAGGTCT" : 20,
+    "TACCCCAA+TGATGCCT" : 20,
+    "TACCATTC+ACACTCTT" : 20,
+    "TACCATTC+ACACTCAT" : 20,
+    "TACCATGC+CCACGCAT" : 20,
+    "TACCATGC+ACACGCAA" : 20,
+    "TACCATGC+ACAATCAA" : 20,
+    "TACCAGGC+TGACGCTA" : 20,
+    "TACCAGCA+CGTCATTT" : 20,
+    "TACCAATG+TTAAGCTA" : 20,
+    "TACATTTT+AGATCCCT" : 20,
+    "TACATGGG+TGAGGTCT" : 20,
+    "TACAGGCT+ACCACACA" : 20,
+    "TACAGGCC+AGTCATTG" : 20,
+    "TACAGACT+ATACCCCG" : 20,
+    "TACACTCG+ACAACTAT" : 20,
+    "TACAATGC+CGGACGAG" : 20,
+    "TACAATCG+ACAATCCT" : 20,
+    "TACAATCG+ACAACCAA" : 20,
+    "TAATTCAT+AAGGCGAT" : 20,
+    "TAATTCAG+TACGCCTT" : 20,
+    "TAATGGTG+CGGTAGAG" : 20,
+    "TAATGGCA+AAGGCGTT" : 20,
+    "TAATGGAG+AGGGAGTT" : 20,
+    "TAATGCTA+AAGGCGTT" : 20,
+    "TAATGCGT+AATGCGTT" : 20,
+    "TAATGCGT+AAGGCGTT" : 20,
+    "TAATGCCG+CAGCAGTT" : 20,
+    "TAATGCCA+AAGGCGTT" : 20,
+    "TAATGCAT+AAGTTGTT" : 20,
+    "TAATGCAT+AAATCGTT" : 20,
+    "TAATGCAG+TCTTTCCC" : 20,
+    "TAATGCAG+CAGCAGTG" : 20,
+    "TAATGCAG+CAGACGAT" : 20,
+    "TAATGCAG+ACTGCGTT" : 20,
+    "TAATGCAG+ACGACGCT" : 20,
+    "TAATGCAG+AAGCGTTA" : 20,
+    "TAATGCAG+AAGACTTT" : 20,
+    "TAATGCAG+AACGCGCT" : 20,
+    "TAATGCAA+TCTCCGTA" : 20,
+    "TAATCGTA+TATTTGTC" : 20,
+    "TAATCCAA+AAGACCAT" : 20,
+    "TAAGTGGT+TGGGGCTG" : 20,
+    "TAAGTGGT+TGGGCTCT" : 20,
+    "TAAGTGGT+TCGCCGAG" : 20,
+    "TAAGTGGT+ACGGCACG" : 20,
+    "TAAGTGGT+AAGGATTG" : 20,
+    "TAAGTGCA+AGTCATTT" : 20,
+    "TAAGGGCA+CGTCATTG" : 20,
+    "TAAGGAAG+AAGGAGGG" : 20,
+    "TAAGATGC+AGGCTGAT" : 20,
+    "TAAGAGGG+AAGGAAGG" : 20,
+    "TAAGAGGC+AGGGAGAG" : 20,
+    "TAAGAGGC+AGACATAG" : 20,
+    "TAAGAGGA+AGGAAGAG" : 20,
+    "TAAGAGGA+AGACATAG" : 20,
+    "TAAGAGCA+CGACATAG" : 20,
+    "TAAGAATT+CGGAAGAG" : 20,
+    "TAAGAAGA+CGGAAGAG" : 20,
+    "TAACTGAT+TGCGGTAT" : 20,
+    "TAACTGAT+CAGTCGAG" : 20,
+    "TAACTAGT+TGGGGTAA" : 20,
+    "TAACGGCT+ACTCCACG" : 20,
+    "TAACGGAG+CGCGCGAA" : 20,
+    "TAACGCAG+AGGGCCTT" : 20,
+    "TAACCTGG+TGAGGTCT" : 20,
+    "TAACATTC+ATACGCTA" : 20,
+    "TAACATTC+ACGCGCAA" : 20,
+    "TAACATGG+AAACCGAT" : 20,
+    "TAACATGC+ACACATAC" : 20,
+    "TAACATGA+CGACTTAT" : 20,
+    "TAACATCA+CGACATTT" : 20,
+    "TAACACAC+AAACCCTA" : 20,
+    "TAACAACT+TGAGCTAA" : 20,
+    "TAAAGGGG+TGAGGGAG" : 20,
+    "TAAAGGGA+CGAGGGAG" : 20,
+    "TAAAGAAG+AAGGAGAG" : 20,
+    "TAAAATTG+CAGGAGAG" : 20,
+    "TAAAATGG+ACACTCAG" : 20,
+    "TAAAAGGG+TGAGGGAA" : 20,
+    "TAAAAGCT+ACTCCACG" : 20,
+    "TAAAAGAG+AGTGCCAG" : 20,
+    "GTAGTGCA+AGGCATTG" : 20,
+    "GGGGAGGA+AAGGGGAA" : 20,
+    "GGCGAGGA+AAAGGGGA" : 20,
+    "GGAGGGAT+CGAGAGTT" : 20,
+    "GAGGAGAA+AAGAGAAG" : 20,
+    "GACCTGGG+TGAGGTCT" : 20,
+    "GAAGGGAA+AGGAAGGG" : 20,
+    "GAACATGA+AAAACCAA" : 20,
+    "GAAAAAAA+TACGACAG" : 20,
+    "CTTTCTCT+ATCTCCTT" : 20,
+    "CTTTCCTG+TTCTATCG" : 20,
+    "CTTTCCTG+ATACAACG" : 20,
+    "CTTTCCTC+TTTTCTCG" : 20,
+    "CTTTCCTC+CCCCTTTC" : 20,
+    "CTTTACTC+CGCCATCA" : 20,
+    "CTTGTCAT+CATCGTTA" : 20,
+    "CTTGGTCA+CATCGTTA" : 20,
+    "CTTCTTTC+CTCTTTTC" : 20,
+    "CTTCTTTC+CATCTTTA" : 20,
+    "CTTCTGTC+CCTCGTTT" : 20,
+    "CTTCTATC+TTACGCGA" : 20,
+    "CTTCGGTC+CTCCTTTA" : 20,
+    "CTTCGGTC+CCATCGTT" : 20,
+    "CTTCGGTC+CAATCGTT" : 20,
+    "CTTCGGTC+ATCTAAGG" : 20,
+    "CTTCGGTC+ATCGTTAA" : 20,
+    "CTTCGGGT+CATCGTTA" : 20,
+    "CTTCGGAT+AATTGTTA" : 20,
+    "CTTCCGTG+CATCAATG" : 20,
+    "CTTCAGAC+CATCAAAA" : 20,
+    "CTTATGTG+CATGGTTG" : 20,
+    "CTTAGGTG+CATAGTTA" : 20,
+    "CTGTTCAT+ACCTATGG" : 20,
+    "CTGTCTAT+TTCCAACG" : 20,
+    "CTGTCTAT+TCAACTCA" : 20,
+    "CTGTCTAT+ATCTTAAG" : 20,
+    "CTGTCTAT+ATCTCTGG" : 20,
+    "CTGTCTAT+ACCTAATG" : 20,
+    "CTGTCTAT+ACCAAAGG" : 20,
+    "CTGTAGTG+ACGAGGTT" : 20,
+    "CTGGTGGT+TTCCAACG" : 20,
+    "CTGGGGTT+AGGCTACG" : 20,
+    "CTGGGGGG+TAGCTACG" : 20,
+    "CTGGGGGG+AAGCTACG" : 20,
+    "CTGGGACC+TGGTCTAA" : 20,
+    "CTGGAACC+AGGTCTAG" : 20,
+    "CTGGAACA+TGGCGGCA" : 20,
+    "CTGGAACA+CAGCGGAA" : 20,
+    "CTGGAACA+AGGTGGAG" : 20,
+    "CTGGAAAT+CGACTTAA" : 20,
+    "CTGCTAGT+TAACTACT" : 20,
+    "CTGCGGGC+CGAGGTTA" : 20,
+    "CTGCCTTT+ATATAAGG" : 20,
+    "CTGCATAT+ATATACGG" : 20,
+    "CTGCATAT+AGCTCAAG" : 20,
+    "CTGCAATC+TTACTCTA" : 20,
+    "CTGATAGT+TAGCTACG" : 20,
+    "CTGAGTGT+TAGCTACG" : 20,
+    "CTGAGGGG+TATCGTTA" : 20,
+    "CTGAGGGA+TAGCTACG" : 20,
+    "CTGAGAGT+TAGTTCCG" : 20,
+    "CTGAGAGT+ACGCTACG" : 20,
+    "CTGAGAGG+TGCTACGA" : 20,
+    "CTGAGAGG+TCACTACG" : 20,
+    "CTGAGAGG+TAGCTCTG" : 20,
+    "CTGAGAGG+TAGCTCCT" : 20,
+    "CTGAGAGG+TACTCTTT" : 20,
+    "CTGAGAGG+CAGGTACG" : 20,
+    "CTGAGAGG+AAGCTTCG" : 20,
+    "CTGACTGT+ATCTTAGG" : 20,
+    "CTGAAGGA+TAGCTACG" : 20,
+    "CTGAAAGG+TAAATTCA" : 20,
+    "CTGAAAGG+AAACTACT" : 20,
+    "CTCTTTTT+AATTCTTT" : 20,
+    "CTCTTTCC+CCCTTATA" : 20,
+    "CTCTTGCC+AGATGCTT" : 20,
+    "CTCTTCCT+ACACCTTA" : 20,
+    "CTCTTCCG+CTTCAATG" : 20,
+    "CTCTTCCC+CTTCTCTC" : 20,
+    "CTCTTCCA+CGGAGATA" : 20,
+    "CTCTTCAT+CGCTTGTA" : 20,
+    "CTCTTATA+CGGAGATA" : 20,
+    "CTCTTACT+CCGACTTA" : 20,
+    "CTCTTACC+TTCTTGGA" : 20,
+    "CTCTTACC+TGGAGACA" : 20,
+    "CTCTTACC+TCAACTCA" : 20,
+    "CTCTTACC+CGTGGATA" : 20,
+    "CTCTTACC+CGGGAGAT" : 20,
+    "CTCTTACC+CGGCGTTA" : 20,
+    "CTCTTACC+CGGCGCTA" : 20,
+    "CTCTTACC+CGGCAATG" : 20,
+    "CTCTTACC+CGGAGGAT" : 20,
+    "CTCTTACC+CGGAGCAA" : 20,
+    "CTCTTACC+CGGAGAAT" : 20,
+    "CTCTTACC+CCGACATA" : 20,
+    "CTCTTACA+CGGCGTTA" : 20,
+    "CTCTTACA+CGGCATTA" : 20,
+    "CTCTGGTT+ACATGTTT" : 20,
+    "CTCTCTGT+CTGTCAAG" : 20,
+    "CTCTCGTA+CCTTTCCA" : 20,
+    "CTCTCACT+CGGTGATA" : 20,
+    "CTCTCACT+CGGCGATG" : 20,
+    "CTCTATTT+ATATGAGA" : 20,
+    "CTCTAATC+TTATGCTA" : 20,
+    "CTCTAACC+CTAAGATA" : 20,
+    "CTCGTGCC+CAGGGCTG" : 20,
+    "CTCGTGCA+CGGAAATG" : 20,
+    "CTCGTACC+CGGCATTG" : 20,
+    "CTCGGGTT+AAGTTACG" : 20,
+    "CTCGCGAT+ATAGACGG" : 20,
+    "CTCGCGAT+AGATGCGT" : 20,
+    "CTCGCAAC+TTTTTGCT" : 20,
+    "CTCGCAAC+TGTGAGCA" : 20,
+    "CTCGAGCT+ACAGCTCG" : 20,
+    "CTCCTCTT+TCCCCTTT" : 20,
+    "CTCCTACC+CGCAGTTA" : 20,
+    "CTCCGTTC+CATCGTTA" : 20,
+    "CTCCGGTT+CATGGTCA" : 20,
+    "CTCCGGGG+TAGGGACG" : 20,
+    "CTCCCCCC+ACGTAGCC" : 20,
+    "CTCCCAAC+TGTCATCT" : 20,
+    "CTCCAGCG+ACAACCCA" : 20,
+    "CTCCAATT+TCAAGTTA" : 20,
+    "CTCATAGT+CAGTCGCG" : 20,
+    "CTCATAGC+AAGTCTAG" : 20,
+    "CTCATACC+CGCTTCTT" : 20,
+    "CTCATACC+CAGTCTAA" : 20,
+    "CTCATAAT+CGGTCGCT" : 20,
+    "CTCACTAT+TCCAATCG" : 20,
+    "CTCACACA+TGGTAGCT" : 20,
+    "CTCACAAT+TGTGAGCA" : 20,
+    "CTCACAAC+TTGTAACT" : 20,
+    "CTCACAAC+TTACACTC" : 20,
+    "CTCACAAC+TGGTCTAA" : 20,
+    "CTCACAAC+TGGTAACG" : 20,
+    "CTCACAAC+TCTTTCCC" : 20,
+    "CTCACAAC+TAGGAGCT" : 20,
+    "CTCAATTC+TTAAGCCA" : 20,
+    "CTCAAATC+TCAAGTCA" : 20,
+    "CTATTTCC+CGACTCTT" : 20,
+    "CTATTGTG+AGGAAATG" : 20,
+    "CTATTACC+CGAATCAA" : 20,
+    "CTATGACG+TGGTAAAG" : 20,
+    "CTATCTGT+ATCTACAG" : 20,
+    "CTATCTAT+ATCTACTT" : 20,
+    "CTATCGTC+CCAAGATG" : 20,
+    "CTATCCCC+TTTTCTCC" : 20,
+    "CTATCCCC+TGCCATCG" : 20,
+    "CTATAGTC+CCAAGTTT" : 20,
+    "CTATAGTC+ACAGGTAG" : 20,
+    "CTATAGAG+AGGGACAG" : 20,
+    "CTAGTTGT+ATGGTCTT" : 20,
+    "CTAGTGGT+AAGCATTG" : 20,
+    "CTAGTGCC+TGGTCTCT" : 20,
+    "CTAGTAGT+CAGTCTAG" : 20,
+    "CTAGTACT+CGGTCTAA" : 20,
+    "CTAGGGGT+AAGGTACG" : 20,
+    "CTAGGGGT+AAGGACTG" : 20,
+    "CTAGCGCA+TGTTCTAC" : 20,
+    "CTAGCCCA+TTGTCTAA" : 20,
+    "CTAGCAAC+TGGTAGAT" : 20,
+    "CTAGAGTT+CGGTAGTA" : 20,
+    "CTAGAGCC+TGAGCTAA" : 20,
+    "CTAGAGCC+AGGGCTAG" : 20,
+    "CTAGAACC+TTGTCTCC" : 20,
+    "CTAGAACC+TGGTCCGA" : 20,
+    "CTAGAACC+TGGTATAG" : 20,
+    "CTAGAACC+TGGGCTCT" : 20,
+    "CTAGAACC+TGGCCTCA" : 20,
+    "CTAGAACC+TCGCCTTA" : 20,
+    "CTAGAACC+CGGTCTCA" : 20,
+    "CTACTGGT+AACCCTTG" : 20,
+    "CTACTCAC+CATCGTTA" : 20,
+    "CTACCACC+CCGTCTCC" : 20,
+    "CTACAGTC+CCAACCTA" : 20,
+    "CTACAGGG+AGGGTAAG" : 20,
+    "CTACAGAG+AAGCCCAG" : 20,
+    "CTACAATG+TAACGTTA" : 20,
+    "CTAATGCT+ACACCTGG" : 20,
+    "CTAATAGC+TAGTCTAG" : 20,
+    "CTAATACC+CAGTCTAA" : 20,
+    "CTAAGCGG+AAGGTACG" : 20,
+    "CTAACGTT+ATAACACG" : 20,
+    "CTAACGTT+AGTGCCAG" : 20,
+    "CTAACGTG+AGACCAAG" : 20,
+    "CTAACCAT+TGGTCTAA" : 20,
+    "CTAACACC+TGGTCGCA" : 20,
+    "CTAAACCA+TGGTCTAA" : 20,
+    "CTAAAAGG+TCACTACT" : 20,
+    "CGTTTCTT+ACCACTGA" : 20,
+    "CGTTTCTC+ACAACTGA" : 20,
+    "CGTTTATC+CCAACAAG" : 20,
+    "CGTTGTTA+CCCGGTTA" : 20,
+    "CGTTCTTC+CCCAGTTT" : 20,
+    "CGTTAGTC+CGACGTTG" : 20,
+    "CGTTAATC+TCAACTCA" : 20,
+    "CGTTAATC+CGCAGTTA" : 20,
+    "CGTTAATC+CCTCGTTA" : 20,
+    "CGTTAATC+CCACTTTA" : 20,
+    "CGTTAATC+CCAATGTA" : 20,
+    "CGTTAATC+CCAAGCAA" : 20,
+    "CGTTAATC+CCAACCCC" : 20,
+    "CGTTAATC+CAAGTTAA" : 20,
+    "CGTTAATC+AGCTTCTT" : 20,
+    "CGTGAGTC+CACAGTTA" : 20,
+    "CGTGAGGA+TATGGTTA" : 20,
+    "CGTGAGGA+CACGGTTA" : 20,
+    "CGTCGGTC+CATAGTGA" : 20,
+    "CGTCGGGG+AGTCGTTA" : 20,
+    "CGTCGGGC+CATGGTTA" : 20,
+    "CGTCATTC+CTCAGCAT" : 20,
+    "CGTAGGTG+CATGGTTA" : 20,
+    "CGTAGCAG+TACGACAA" : 20,
+    "CGGTGGGG+AAGTAGTG" : 20,
+    "CGGTGGCT+ACCACTCG" : 20,
+    "CGGTGATC+CCAATTTA" : 20,
+    "CGGTCTTT+ATCTAATG" : 20,
+    "CGGTATTC+CCAAGCTA" : 20,
+    "CGGTATTC+ACAAGTTA" : 20,
+    "CGGTATAT+CTATAAGA" : 20,
+    "CGGTAGTC+CCAAGTTA" : 20,
+    "CGGTAATT+CCTCCATG" : 20,
+    "CGGTAATG+CAGCTACG" : 20,
+    "CGGGGATA+CGGGGGGA" : 20,
+    "CGGGCTAT+ATCTAATG" : 20,
+    "CGGGAAAA+AGAGAAGG" : 20,
+    "CGGCCTGT+ATCTATGG" : 20,
+    "CGGCATTT+CTAAGCAA" : 20,
+    "CGGCATGG+ATCACTGT" : 20,
+    "CGGAGGTA+CGAGAGTT" : 20,
+    "CGGAGGGA+AAGAGTTA" : 20,
+    "CGGAGGAA+TGCGGCGT" : 20,
+    "CGGAGGAA+CAGAGAGA" : 20,
+    "CGGAGCAG+TACGTAAG" : 20,
+    "CGGAGAGT+TAGCTAGG" : 20,
+    "CGGAGAGG+TAGAGACT" : 20,
+    "CGGAATTC+CGCAGTGA" : 20,
+    "CGGAAAGG+TAGAGAAA" : 20,
+    "CGCTTTCC+ACCACTGA" : 20,
+    "CGCTTCTT+ACAACTTA" : 20,
+    "CGCTTCCT+TCTTTCCC" : 20,
+    "CGCTTCCT+ACTCTTTC" : 20,
+    "CGCTTCCT+ACTACTCA" : 20,
+    "CGCTTCCT+ACCACTTG" : 20,
+    "CGCTTCCT+ACAACTTA" : 20,
+    "CGCTTCCT+AACACTTA" : 20,
+    "CGCTTAGT+AAGTAGTG" : 20,
+    "CGCTTACG+CGCCAATG" : 20,
+    "CGCTTACC+CAGTAGTG" : 20,
+    "CGCTGTCG+AAGAAGCG" : 20,
+    "CGCTGGTT+ACGACTTG" : 20,
+    "CGCTCCTA+ACCACTGA" : 20,
+    "CGCTCCCT+ACCACCGT" : 20,
+    "CGCTATTC+CCAAGTTA" : 20,
+    "CGCTATCC+CCAAGTCA" : 20,
+    "CGCTAGCG+ACAACGCG" : 20,
+    "CGCTACTC+ACCACTGA" : 20,
+    "CGCTAATT+CCCACTGA" : 20,
+    "CGCTAACC+CCAAGTTA" : 20,
+    "CGCTAACC+CCAAGATA" : 20,
+    "CGCTAACA+ACGTCGAA" : 20,
+    "CGCGAGGA+CATGGTTA" : 20,
+    "CGCGAGGA+CACGGATA" : 20,
+    "CGCCTCGT+ACCACTGT" : 20,
+    "CGCCGGTT+CATCGTTA" : 20,
+    "CGCCATGG+TACAATCG" : 20,
+    "CGCATTCT+ACAACTGA" : 20,
+    "CGCATCAT+CAATCGAA" : 20,
+    "CGCAGTGG+ACAATTTA" : 20,
+    "CGCAGTCG+AAGAATCG" : 20,
+    "CGCAGAGG+AGATGCTT" : 20,
+    "CGCACAGC+CAGTCGCG" : 20,
+    "CGCAAAGC+CAGTCTAA" : 20,
+    "CGATGTGG+AAGTAGAG" : 20,
+    "CGATGGTT+AAGTATGG" : 20,
+    "CGATGGTG+TAGGGGTT" : 20,
+    "CGATGGTG+CATTAGTG" : 20,
+    "CGATGGTG+CAAGTAGT" : 20,
+    "CGATGGTG+AGGTAGAG" : 20,
+    "CGATGGTG+AGATGCCG" : 20,
+    "CGATGGTG+AAGTGTGA" : 20,
+    "CGATGGTG+AAAGTAGT" : 20,
+    "CGATGGGA+AAGTAGTG" : 20,
+    "CGATGGCG+AAGCAGCG" : 20,
+    "CGATGCCT+ACCACGGA" : 20,
+    "CGATGCCT+ACCAAGGG" : 20,
+    "CGATGCAG+AAGTAGTG" : 20,
+    "CGATGAAA+CGGAGAGA" : 20,
+    "CGATAGTG+AAAAAAAG" : 20,
+    "CGATACTC+CCAAGTTA" : 20,
+    "CGATAATG+CCAAGTTA" : 20,
+    "CGAGGGGA+CAGAGAAA" : 20,
+    "CGAGGGCG+AAGCAGTG" : 20,
+    "CGAGGAAA+CGGAGAAA" : 20,
+    "CGAGAGGA+AAAGGAGA" : 20,
+    "CGAGAGCC+TAGGCTAA" : 20,
+    "CGAGAAGC+TAGGCTAA" : 20,
+    "CGAGAAAG+TGGAAAAA" : 20,
+    "CGACTAGG+TACATTGA" : 20,
+    "CGACTAGG+TACAGTTG" : 20,
+    "CGACTAGG+ACCCCTTG" : 20,
+    "CGACGGGA+CAGCGGCA" : 20,
+    "CGACGAGT+TACCAGGG" : 20,
+    "CGACATTG+CACAACAG" : 20,
+    "CGACAGAG+AGCGCCAG" : 20,
+    "CGAAGAGG+TAGAAGGG" : 20,
+    "CGAAGAGG+AGGTTTAA" : 20,
+    "CCTTTCAT+ATCTTTGA" : 20,
+    "CCTTTACT+CCTGTGAA" : 20,
+    "CCTTGCAT+CAACGTAA" : 20,
+    "CCTTCTTT+TTCCAACG" : 20,
+    "CCTTCCCC+TTTTCCCT" : 20,
+    "CCTTACAT+CTACTAAA" : 20,
+    "CCTGGCAT+TCTGTGAA" : 20,
+    "CCTGACAT+TTATTCGA" : 20,
+    "CCTGACAT+CAACTGGA" : 20,
+    "CCTGAACA+CGTCGTAA" : 20,
+    "CCTCTTAC+CGGAGATA" : 20,
+    "CCTCGTAT+CTCTTGGA" : 20,
+    "CCTCCTTG+CTCCACCT" : 20,
+    "CCTCCGCC+CATCGCCA" : 20,
+    "CCTAGAAC+TGGTCTAA" : 20,
+    "CCGTTCGT+CAACTGAA" : 20,
+    "CCGTTACA+CGGTGATA" : 20,
+    "CCGTGACA+CGGTGGAG" : 20,
+    "CCGTCTTT+ATCTAAGG" : 20,
+    "CCGTCCTT+CAACTGAG" : 20,
+    "CCGTACGG+CAACTGAG" : 20,
+    "CCGTACAT+CGGAGATA" : 20,
+    "CCGTACAT+CGAGTGAA" : 20,
+    "CCGTACAT+CCCCTTCC" : 20,
+    "CCGTACAT+CCAACTGA" : 20,
+    "CCGTAACT+CAACTGAA" : 20,
+    "CCGGTACA+CAGGACAA" : 20,
+    "CCGGGGGG+AAGCTACG" : 20,
+    "CCGGATCA+CGCAGGAA" : 20,
+    "CCGGATCA+CCGACGCA" : 20,
+    "CCGGACAT+CACGTGAA" : 20,
+    "CCGGAAGA+CGGCGGCA" : 20,
+    "CCGGAACT+CGACTGAA" : 20,
+    "CCGGAACA+GGTGGAAA" : 20,
+    "CCGGAACA+CGGTGTGA" : 20,
+    "CCGGAACA+CGGGGGAG" : 20,
+    "CCGGAACA+CGAGGGCA" : 20,
+    "CCGCGTGA+ATCAGCGA" : 20,
+    "CCGCAACA+CTCAGCAA" : 20,
+    "CCGCAACA+CGTCTGAA" : 20,
+    "CCGACAAA+CGGTAGAA" : 20,
+    "CCGAAACT+ACTTCACG" : 20,
+    "CCGAAAAA+CGGTGGAA" : 20,
+    "CCCTTTTT+ACTTCTTT" : 20,
+    "CCCTCTCT+ACCCCTCC" : 20,
+    "CCCGTGTT+ACATCCTT" : 20,
+    "CCCGTGCT+CGGTGCTA" : 20,
+    "CCCGTACA+CAACTGAA" : 20,
+    "CCCGCTAT+AGATAACG" : 20,
+    "CCCGAGCT+AGATGTCT" : 20,
+    "CCCCCGGT+AGCTTCTT" : 20,
+    "CCCCCCCC+CCCCCCCC" : 20,
+    "CCCAACAT+CAACCGAA" : 20,
+    "CCATGACG+CAGTAGCG" : 20,
+    "CCATCACC+TTGCATCA" : 20,
+    "CCATACCT+CAACTTAA" : 20,
+    "CCATAATG+TTCCCTAA" : 20,
+    "CCACAGAG+AGTGGCAA" : 20,
+    "CCACAACC+ACATTCAT" : 20,
+    "CCACAACA+CGACGGAA" : 20,
+    "CCACAACA+ACATTCAA" : 20,
+    "CCAATAGT+CGTCATTG" : 20,
+    "CCAAAACT+CAGTCGAA" : 20,
+    "CATTAGTA+CCACATTG" : 20,
+    "CATGCCCA+TTGTGCGT" : 20,
+    "CATGCAAA+TTGTACGT" : 20,
+    "CATCCTTT+CTCCTCCT" : 20,
+    "CATCCCGT+TGAGGTCT" : 20,
+    "CATCAGTC+CATCATTA" : 20,
+    "CAGTGCAG+AAGGTACG" : 20,
+    "CAGTATTG+CTCAGCTT" : 20,
+    "CAGTAGTC+CCACGTTA" : 20,
+    "CAGTAAGG+CTAAGGTA" : 20,
+    "CAGGGACA+CGGGGGAA" : 20,
+    "CAGGAGGG+CTCAGAAA" : 20,
+    "CAGGAGGA+TCTCGGTA" : 20,
+    "CAGGACAG+CAACCGAA" : 20,
+    "CAGGAACA+CGTCGGTA" : 20,
+    "CAGGAAAG+CAAAAGAA" : 20,
+    "CAGCTAGG+TACAATTT" : 20,
+    "CAGCATGT+CTCATCGT" : 20,
+    "CAGCATGG+TCCACTCC" : 20,
+    "CAGCATGG+CTCCATAT" : 20,
+    "CAGCATGG+CTCAAGCA" : 20,
+    "CAGCATGG+CCCACCAA" : 20,
+    "CAGCATGG+CCAAGTTA" : 20,
+    "CAGCATCG+CTCACTAT" : 20,
+    "CAGCAGGG+CACAACAT" : 20,
+    "CAGCACGG+CGCAGCAG" : 20,
+    "CAGAGTGG+TAGCTACG" : 20,
+    "CAGAGAGA+CATCTACG" : 20,
+    "CAGAGAAA+AAGCTCCG" : 20,
+    "CAGACTAT+ACATATGG" : 20,
+    "CAGACTAA+AAGATCAT" : 20,
+    "CAGAATCT+ACAACACA" : 20,
+    "CAGAATCG+CCAAATCA" : 20,
+    "CAGAATAT+ACATATGG" : 20,
+    "CAGAACCA+TGGTCTAA" : 20,
+    "CACTTCCT+CCCACAGG" : 20,
+    "CACTATTG+TTCTTGGG" : 20,
+    "CACGTGTG+CGTCATTG" : 20,
+    "CACGTGTG+ACCGCTTG" : 20,
+    "CACGTGCC+CGTCATTG" : 20,
+    "CACGTGCA+CGCCATTT" : 20,
+    "CACGTGAG+ACATTCTG" : 20
+   }
+  }
+ ]
+}

@@ -8,3 +8,4 @@ GIL.egg-info/
 !sample_sheet_v2_template.csv
 !sample_sheet_template.csv
 !Final_Indexes/**
+!demultiplexing_tests/**

@@ -1,0 +1,985 @@
+BCL to FASTQ file converter
+bcl2fastq v2.19.0.316
+Copyright (c) 2007-2017 Illumina, Inc.
+
+2022-09-23 14:23:55 [2aaaaacbf200] Command-line invocation: bcl2fastq --input-dir /arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls --output-dir . --sample-sheet /arc/project/st-cdeboer-1/nick/miseq_demultiplex/TruSeq_Plate_1_sample_sheet_forward.csv --ignore-missing-filter --ignore-missing-positions 
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Minimum log level: INFO
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Sample sheet: '/arc/project/st-cdeboer-1/nick/miseq_demultiplex/TruSeq_Plate_1_sample_sheet_forward.csv'
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Runfolder path: '/scratch/st-cdeboer-1/nick/demultiplex'
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Input path: '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls'
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Intensities path: '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/'
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Output path: '.'
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: InterOp path: '/scratch/st-cdeboer-1/nick/demultiplex/InterOp/'
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Stats path: './Stats/'
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Reports path: './Reports/'
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Detected CPUs: 32
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Loading threads: 4
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Processing threads: 32
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Writing threads: 4
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Allowed barcode mismatches: 1 
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Tiles: <ALL>
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Minimum trimmed read length: 35
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Use bases masks: <NONE>
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Mask short adapter reads: 22
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Adapter stringency: 0.9
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Adapter trimming method: Allow matches with indels
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Ignore missing BCLs: NO
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Ignore missing filters: YES
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Ignore missing positions: YES
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Ignore missing controls: NO
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Include non-PF clusters: NO
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Create FASTQs for index reads: NO
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: Use bgzf compression for FASTQ files: YES
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: FASTQ compression level: 4
+2022-09-23 14:23:55 [2aaaaacbf200] INFO: RunInfo.xml: '"/scratch/st-cdeboer-1/nick/demultiplex/RunInfo.xml"'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO: Lane: 1
+2022-09-23 14:23:56 [2aaaaacbf200] INFO: Mask: 
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #0 'unknown' 'Undetermined' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #1 '1' '1' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CGACTAGG+TACCATTG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #2 '2' '2' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CCGTACAT+CAACTGAA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #3 '3' '3' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CCAATAGT+TTGCTCCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #4 '4' '4' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTTACCGG+CGTCTTCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #5 '5' '5' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCACGAAG+TTGATAGG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #6 '6' '6' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CCGGAACA+CGGTGGAA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #7 '7' '7' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CGTCTGTG+TGAGATGG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #8 '8' '8' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TTGGTCTA+CCTACTAT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #9 '9' '9' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TAGGCTAA+AAGAGCAT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #10 '10' '10' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TACCTGGT+TGAGGTCT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #11 '11' '11' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AGCAGTCT+AATTCGCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #12 '12' '12' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCAAGCCG+TCACGTAA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #13 '13' '13' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TGGATTGC+CATTCCAT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #14 '14' '14' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TTAGTGGT+AAGGTCTG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #15 '15' '15' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CAGCACAA+AACTGTCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #16 '16' '16' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CCTCAATA+TCCTTACA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #17 '17' '17' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AAGATGGT+TCTCGATA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #18 '18' '18' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AATGCCAA+TTGTGCGT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #19 '19' '19' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ACTATTGC+TCCTGTGT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #20 '20' '20' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ATGCGGTG+CACGACTA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #21 '21' '21' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ACGAACCT+TGGATTGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #22 '22' '22' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CACAATCG+TCAACTCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #23 '23' '23' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCATTACG+TCGTTCTT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #24 '24' '24' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCTCCGGA+TGGTGATT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #25 '25' '25' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AGGAGTTA+AGCGGTGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #26 '26' '26' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTAGAACC+TGGTCTAA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #27 '27' '27' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TACGATTC+CGGAAGAG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #28 '28' '28' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AGGTAACA+ATGAAGGT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #29 '29' '29' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CAGTAGCT+TTATGGCG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #30 '30' '30' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TAATGCAG+AAGGCGTT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #31 '31' '31' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTTGGAAC+ACGCGCAA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #32 '32' '32' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ACATCTCT+CAGCCAGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #33 '33' '33' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TAGAGGCT+ACTCCACG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #34 '34' '34' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ACTGGAAT+TCTGTGAA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #35 '35' '35' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TGCAGTGG+AGCTTCTT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #36 '36' '36' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ACTAGAGA+TGGCTTAT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #37 '37' '37' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTTAACAC+TAGGCGGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #38 '38' '38' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CAGCATGG+CTCAGCAT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #39 '39' '39' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ATGTTCCG+AATGCAGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #40 '40' '40' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ATAGTCTG+TCCAATCT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #41 '41' '41' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CGATGGTG+AAGTAGTG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #42 '42' '42' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AGCATAGT+CAGTCGAG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #43 '43' '43' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TGCGAGGA+TACGGTTA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #44 '44' '44' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AAGGAGTG+TTGAACAG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #45 '45' '45' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TTGTTGAG+ACGCGGTT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #46 '46' '46' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTCTTACC+CGGAGATA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #47 '47' '47' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CCTGACAA+CTTGAGCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #48 '48' '48' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCGCTTGT+CATATCGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #49 '49' '49' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TTCCAATC+TTACGCTA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #50 '50' '50' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TAACACCT+CCAACAAG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #51 '51' '51' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ACGCCACA+CCGAACCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #52 '52' '52' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TGCATACA+CTAGCTTA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #53 '53' '53' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCCGTGTT+AGATGCCT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #54 '54' '54' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCTTGCAT+TTCTTGGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #55 '55' '55' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCCATGGA+TGTCTGTG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #56 '56' '56' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AGCAACAT+AGATTGAG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #57 '57' '57' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTGAGAGG+TAGCTACG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #58 '58' '58' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CAATGTGC+CTGTAATG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #59 '59' '59' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTTCGGTC+CATCGTTA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #60 '60' '60' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TGGCCTAC+TCTAAGCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #61 '61' '61' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTGTCTAT+ATCTAAGG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #62 '62' '62' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CACGTGTG+ACAGCCTG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #63 '63' '63' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTACCATA+CACACCTT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #64 '64' '64' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TACTACAC+ATGACACG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #65 '65' '65' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CGCTTCCT+ACCACTGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #66 '66' '66' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCGATGCC+ACGGTTGT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #67 '67' '67' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ACGGAGGT+CGAGAGTT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #68 '68' '68' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CCTCTTCT+TATTCTCG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #69 '69' '69' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CGTTAATC+CCAAGTTA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #70 '70' '70' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ATGATGAC+AAGCGGCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #71 '71' '71' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AACCATAG+TACCTAGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #72 '72' '72' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'ACCAGGTG+AGACCGTT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #73 '73' '73' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TAACATGC+ACACTCAT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #74 '74' '74' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCTAACGC+TCATCACT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #75 '75' '75' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AGAATCAG+TACGACAG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #76 '76' '76' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CGAGGAAG+ATCAACTG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #77 '77' '77' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TACGTGCA+CGTCATTG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #78 '78' '78' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTAACGTT+ATACCAGG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #79 '79' '79' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCTAGATC+AGCTGATG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #80 '80' '80' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AATTCCGC+TGGTGTCG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #81 '81' '81' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTCACAAC+TGGTAGCT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #82 '82' '82' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CAAGATTG+CGAAGGTG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #83 '83' '83' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCGCGATA+CGGCTAGT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #84 '84' '84' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'AGATAAGC+AAGCTTGG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #85 '85' '85' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TTACAGAG+AGTGCCAG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #86 '86' '86' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TACCGTCC+CTCATGAA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #87 '87' '87' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TATCTCCA+TCTCACGG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #88 '88' '88' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TGCCTCAA+CGTGATAA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #89 '89' '89' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TCTTCCTG+TTCCAACG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #90 '90' '90' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TTATCCGT+CACGTGCA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #91 '91' '91' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TTACCACT+TGTAGACA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #92 '92' '92' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'TACTCGAA+TCATCCGA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #93 '93' '93' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CAAGCGAG+TTCGGCTT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #94 '94' '94' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CTAGTCCT+TCAGGCGT'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #95 '95' '95' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CGTGTACC+ATCCGGAA'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Sample: #96 '96' '96' [default]
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:     Barcode: 'CGGCAAGA+AAGGAAGG'
+2022-09-23 14:23:56 [2aaaaacbf200] INFO: Read: 1 data read
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Cycles: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26
+2022-09-23 14:23:56 [2aaaaacbf200] INFO: Read: 1 index read
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Cycles: 27,28,29,30,31,32,33,34
+2022-09-23 14:23:56 [2aaaaacbf200] INFO: Read: 2 index read
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Cycles: 35,36,37,38,39,40,41,42
+2022-09-23 14:23:56 [2aaaaacbf200] INFO: Read: 2 data read
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Cycles: 43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68
+2022-09-23 14:23:56 [2aaaaacbf200] WARNING: Option: '--minimum-trimmed-read-length' with value: 35 is being overwritten by the shortest non-index read length: 26
+2022-09-23 14:23:56 [2aaaaacbf200] INFO: Lane: 1
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Tile: 1101 (index: 0, skipped tiles: 0)
+2022-09-23 14:23:56 [2aaaaacbf200] INFO:   Tile: 1102 (index: 1, skipped tiles: 0)
+2022-09-23 14:24:01 [2aaaaacbf200] INFO: creating directory "./Stats"
+2022-09-23 14:24:01 [2aaaaacbf200] INFO: creating directory "/scratch/st-cdeboer-1/nick/demultiplex/InterOp"
+2022-09-23 14:24:01 [2aaaaacbf200] INFO: Created FASTQ file '"./Undetermined_S0_L001_R1_001.fastq.gz"
+2022-09-23 14:24:01 [2aaaaacbf200] INFO: Created FASTQ file '"./Undetermined_S0_L001_R2_001.fastq.gz"
+2022-09-23 14:24:01 [2aaaaacbf200] INFO: Created FASTQ file '"./1_S1_L001_R1_001.fastq.gz"
+2022-09-23 14:24:01 [2aaaaacbf200] INFO: Created FASTQ file '"./1_S1_L001_R2_001.fastq.gz"
+2022-09-23 14:24:05 [2aaaaacbf200] INFO: Created FASTQ file '"./2_S2_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./2_S2_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./3_S3_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./3_S3_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./4_S4_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./4_S4_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./5_S5_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./5_S5_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./6_S6_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./6_S6_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./7_S7_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./7_S7_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./8_S8_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./8_S8_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./9_S9_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./9_S9_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./10_S10_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./10_S10_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./11_S11_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./11_S11_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./12_S12_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./12_S12_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./13_S13_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./13_S13_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./14_S14_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./14_S14_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./15_S15_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./15_S15_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./16_S16_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./16_S16_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./17_S17_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./17_S17_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./18_S18_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./18_S18_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./19_S19_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./19_S19_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./20_S20_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./20_S20_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./21_S21_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./21_S21_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./22_S22_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./22_S22_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./23_S23_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./23_S23_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./24_S24_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./24_S24_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./25_S25_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./25_S25_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./26_S26_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./26_S26_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./27_S27_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./27_S27_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./28_S28_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./28_S28_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./29_S29_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./29_S29_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./30_S30_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./30_S30_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./31_S31_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./31_S31_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./32_S32_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./32_S32_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./33_S33_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./33_S33_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./34_S34_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./34_S34_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./35_S35_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./35_S35_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./36_S36_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./36_S36_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./37_S37_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./37_S37_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./38_S38_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./38_S38_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./39_S39_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./39_S39_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./40_S40_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./40_S40_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./41_S41_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./41_S41_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./42_S42_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./42_S42_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./43_S43_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./43_S43_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./44_S44_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./44_S44_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./45_S45_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./45_S45_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./46_S46_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./46_S46_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./47_S47_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./47_S47_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./48_S48_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./48_S48_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./49_S49_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./49_S49_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./50_S50_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./50_S50_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./51_S51_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./51_S51_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./52_S52_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./52_S52_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./53_S53_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./53_S53_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./54_S54_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./54_S54_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./55_S55_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./55_S55_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./56_S56_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./56_S56_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./57_S57_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./57_S57_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./58_S58_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./58_S58_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./59_S59_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./59_S59_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./60_S60_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./60_S60_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./61_S61_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./61_S61_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./62_S62_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./62_S62_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./63_S63_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./63_S63_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./64_S64_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./64_S64_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./65_S65_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./65_S65_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./66_S66_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./66_S66_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./67_S67_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./67_S67_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./68_S68_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./68_S68_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./69_S69_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./69_S69_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./70_S70_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./70_S70_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./71_S71_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./71_S71_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./72_S72_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./72_S72_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./73_S73_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./73_S73_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./74_S74_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./74_S74_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./75_S75_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./75_S75_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./76_S76_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./76_S76_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./77_S77_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./77_S77_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./78_S78_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./78_S78_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./79_S79_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./79_S79_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./80_S80_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./80_S80_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./81_S81_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./81_S81_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./82_S82_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./82_S82_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./83_S83_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./83_S83_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./84_S84_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./84_S84_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./85_S85_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./85_S85_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./86_S86_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./86_S86_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./87_S87_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./87_S87_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./88_S88_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./88_S88_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./89_S89_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./89_S89_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./90_S90_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./90_S90_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./91_S91_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./91_S91_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./92_S92_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./92_S92_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./93_S93_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./93_S93_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./94_S94_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./94_S94_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./95_S95_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./95_S95_L001_R2_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./96_S96_L001_R1_001.fastq.gz"
+2022-09-23 14:24:06 [2aaaaacbf200] INFO: Created FASTQ file '"./96_S96_L001_R2_001.fastq.gz"
+2022-09-23 14:24:11 [2aaaade30700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C1.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaad45b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C2.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae031700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C6.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0e48700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C19.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaafa3e700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C16.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab1049700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C31.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0041700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C7.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf039700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C21.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0443700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C10.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0242700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C8.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaea36700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C15.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0644700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C28.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab144b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C27.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf43b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C25.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaafe40700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C5.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0845700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C32.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab164c700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C26.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaec37700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C18.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab184d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C30.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae634700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C12.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab124a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C22.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf63c700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C29.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaee38700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C20.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf23a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C24.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae232700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C9.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0a46700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C23.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0c47700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C17.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae835700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C13.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf83d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C14.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaad25a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C3.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae433700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C11.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaafc3f700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C4.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0443700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C33.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaafc3f700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C36.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf43b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C35.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf039700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C34.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0041700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C37.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf039700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C40.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0845700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C39.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf23a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C38.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0242700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C41.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf23a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C44.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0041700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C43.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf83d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C42.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab144b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C45.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf63c700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C46.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0845700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C47.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf83d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C48.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaafa3e700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C49.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae634700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C50.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0c47700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C51.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf83d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C52.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab124a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C53.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0e48700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C54.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae232700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C55.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaec37700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C56.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0845700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C58.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae031700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C57.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae232700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C59.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaf83d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C60.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae433700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C61.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab164c700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C62.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae232700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C63.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab0e48700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C64.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaae031700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C65.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab164c700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C66.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaaee38700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C67.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaaafa3e700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C68.1/s_1_1101.bcl' with 406627 clusters
+2022-09-23 14:24:11 [2aaab124a700] WARNING: File is not open
+2022-09-23 14:24:11 [2aaab124a700] WARNING: Unable to read header of 'Filter' file '' : bytes_read=0 bytes_expected=4:Success (0)
+2022-09-23 14:24:11 [2aaab124a700] WARNING: File is not open
+2022-09-23 14:24:11 [2aaab124a700] WARNING: File is not open
+2022-09-23 14:24:11 [2aaab0041700] WARNING: Mismatching cluster count in positions file: Cycle #1, Tile#1101: bytes_read=0 bytes_expected=406627
+2022-09-23 14:24:11 [2aaab0041700] WARNING: Mismatching cluster count in filter file: Cycle #1, Tile#1101: bytes_read=0 bytes_expected=406627
+2022-09-23 14:24:14 [2aaaade30700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C3.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0845700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C15.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf43b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C26.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab184d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C2.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaea36700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C4.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0242700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C5.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0c47700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C6.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae232700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C7.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab144b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C8.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf039700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C9.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf83d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C10.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaad25a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C11.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae634700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C12.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae031700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C13.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0a46700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C14.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf43b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C33.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaec37700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C17.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0e48700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C1.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaafe40700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C18.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf63c700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C19.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaad45b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C20.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab164c700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C21.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf23a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C22.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0644700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C23.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaee38700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C24.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab1049700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C25.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaafa3e700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C27.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae835700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C28.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab124a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C35.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0443700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C30.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae232700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C31.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaafc3f700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C32.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae433700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C16.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0242700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C34.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0c47700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C36.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0041700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C29.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae634700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C37.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae232700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C38.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0041700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C39.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaafe40700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C40.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0041700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C43.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab1049700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C42.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaafa3e700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C41.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaade30700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C44.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf83d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C45.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab184d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C46.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae835700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C47.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf83d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C49.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaafa3e700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C48.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab124a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C50.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae835700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C52.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaade30700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C51.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaea36700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C54.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaafa3e700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C53.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaad25a700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C55.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae031700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C56.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0845700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C57.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaae634700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C58.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab184d700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C59.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf43b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C60.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0845700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C61.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf43b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C62.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab144b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C63.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0e48700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C65.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf039700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C64.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaaaf43b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C66.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab144b700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C67.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0443700] INFO: Opened BCL file '/arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls/L001/C68.1/s_1_1102.bcl' with 409218 clusters
+2022-09-23 14:24:14 [2aaab0443700] WARNING: File is not open
+2022-09-23 14:24:14 [2aaab0443700] WARNING: Unable to read header of 'Filter' file '' : bytes_read=0 bytes_expected=4:Success (0)
+2022-09-23 14:24:14 [2aaab0443700] WARNING: File is not open
+2022-09-23 14:24:14 [2aaab0443700] WARNING: File is not open
+2022-09-23 14:24:14 [2aaaae835700] WARNING: Mismatching cluster count in positions file: Cycle #1, Tile#1102: bytes_read=406627 bytes_expected=409218
+2022-09-23 14:24:14 [2aaaae835700] WARNING: Mismatching cluster count in filter file: Cycle #1, Tile#1102: bytes_read=0 bytes_expected=409218
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: Created InterOp file '"/scratch/st-cdeboer-1/nick/demultiplex/InterOp/IndexMetricsOut.bin"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/all/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/all/all/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/all/all/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/1"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/1/CGACTAGG+TACCATTG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/1/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/1/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/10"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/10/TACCTGGT+TGAGGTCT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/10/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/10/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/11"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/11/AGCAGTCT+AATTCGCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/11/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/11/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/12"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/12/TCAAGCCG+TCACGTAA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/12/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/12/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/13"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/13/TGGATTGC+CATTCCAT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/13/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/13/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/14"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/14/TTAGTGGT+AAGGTCTG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/14/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/14/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/15"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/15/CAGCACAA+AACTGTCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/15/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/15/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/16"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/16/CCTCAATA+TCCTTACA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/16/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/16/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/17"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/17/AAGATGGT+TCTCGATA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/17/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/17/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/18"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/18/AATGCCAA+TTGTGCGT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/18/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/18/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/19"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/19/ACTATTGC+TCCTGTGT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/19/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/19/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/2"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/2/CCGTACAT+CAACTGAA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/2/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/2/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/20"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/20/ATGCGGTG+CACGACTA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/20/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/20/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/21"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/21/ACGAACCT+TGGATTGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/21/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/21/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/22"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/22/CACAATCG+TCAACTCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/22/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/22/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/23"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/23/TCATTACG+TCGTTCTT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/23/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/23/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/24"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/24/TCTCCGGA+TGGTGATT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/24/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/24/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/25"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/25/AGGAGTTA+AGCGGTGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/25/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/25/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/26"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/26/CTAGAACC+TGGTCTAA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/26/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/26/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/27"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/27/TACGATTC+CGGAAGAG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/27/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/27/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/28"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/28/AGGTAACA+ATGAAGGT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/28/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/28/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/29"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/29/CAGTAGCT+TTATGGCG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/29/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/29/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/3"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/3/CCAATAGT+TTGCTCCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/3/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/3/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/30"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/30/TAATGCAG+AAGGCGTT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/30/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/30/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/31"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/31/CTTGGAAC+ACGCGCAA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/31/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/31/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/32"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/32/ACATCTCT+CAGCCAGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/32/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/32/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/33"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/33/TAGAGGCT+ACTCCACG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/33/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/33/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/34"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/34/ACTGGAAT+TCTGTGAA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/34/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/34/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/35"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/35/TGCAGTGG+AGCTTCTT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/35/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/35/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/36"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/36/ACTAGAGA+TGGCTTAT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/36/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/36/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/37"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/37/CTTAACAC+TAGGCGGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/37/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/37/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/38"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/38/CAGCATGG+CTCAGCAT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/38/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/38/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/39"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/39/ATGTTCCG+AATGCAGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/39/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/39/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/4"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/4/CTTACCGG+CGTCTTCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/4/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/4/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/40"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/40/ATAGTCTG+TCCAATCT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/40/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/40/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/41"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/41/CGATGGTG+AAGTAGTG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/41/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/41/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/42"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/42/AGCATAGT+CAGTCGAG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/42/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/42/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/43"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/43/TGCGAGGA+TACGGTTA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/43/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/43/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/44"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/44/AAGGAGTG+TTGAACAG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/44/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/44/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/45"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/45/TTGTTGAG+ACGCGGTT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/45/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/45/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/46"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/46/CTCTTACC+CGGAGATA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/46/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/46/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/47"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/47/CCTGACAA+CTTGAGCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/47/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/47/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/48"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/48/TCGCTTGT+CATATCGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/48/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/48/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/49"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/49/TTCCAATC+TTACGCTA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/49/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/49/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/5"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/5/TCACGAAG+TTGATAGG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/5/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/5/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/50"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/50/TAACACCT+CCAACAAG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/50/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/50/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/51"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/51/ACGCCACA+CCGAACCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/51/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/51/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/52"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/52/TGCATACA+CTAGCTTA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/52/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/52/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/53"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/53/TCCGTGTT+AGATGCCT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/53/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/53/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/54"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/54/TCTTGCAT+TTCTTGGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/54/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/54/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/55"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/55/TCCATGGA+TGTCTGTG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/55/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/55/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/56"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/56/AGCAACAT+AGATTGAG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/56/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/56/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/57"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/57/CTGAGAGG+TAGCTACG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/57/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/57/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/58"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/58/CAATGTGC+CTGTAATG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/58/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/58/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/59"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/59/CTTCGGTC+CATCGTTA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/59/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/59/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/6"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/6/CCGGAACA+CGGTGGAA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/6/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/6/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/60"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/60/TGGCCTAC+TCTAAGCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/60/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/60/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/61"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/61/CTGTCTAT+ATCTAAGG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/61/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/61/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/62"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/62/CACGTGTG+ACAGCCTG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/62/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/62/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/63"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/63/CTACCATA+CACACCTT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/63/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/63/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/64"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/64/TACTACAC+ATGACACG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/64/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/64/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/65"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/65/CGCTTCCT+ACCACTGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/65/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/65/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/66"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/66/TCGATGCC+ACGGTTGT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/66/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/66/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/67"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/67/ACGGAGGT+CGAGAGTT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/67/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/67/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/68"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/68/CCTCTTCT+TATTCTCG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/68/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/68/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/69"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/69/CGTTAATC+CCAAGTTA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/69/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/69/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/7"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/7/CGTCTGTG+TGAGATGG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/7/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/7/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/70"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/70/ATGATGAC+AAGCGGCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/70/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/70/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/71"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/71/AACCATAG+TACCTAGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/71/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/71/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/72"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/72/ACCAGGTG+AGACCGTT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/72/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/72/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/73"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/73/TAACATGC+ACACTCAT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/73/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/73/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/74"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/74/TCTAACGC+TCATCACT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/74/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/74/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/75"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/75/AGAATCAG+TACGACAG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/75/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/75/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/76"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/76/CGAGGAAG+ATCAACTG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/76/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/76/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/77"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/77/TACGTGCA+CGTCATTG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/77/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/77/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/78"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/78/CTAACGTT+ATACCAGG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/78/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/78/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/79"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/79/TCTAGATC+AGCTGATG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/79/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/79/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/8"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/8/TTGGTCTA+CCTACTAT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/8/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/8/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/80"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/80/AATTCCGC+TGGTGTCG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/80/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/80/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/81"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/81/CTCACAAC+TGGTAGCT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/81/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/81/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/82"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/82/CAAGATTG+CGAAGGTG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/82/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/82/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/83"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/83/TCGCGATA+CGGCTAGT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/83/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/83/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/84"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/84/AGATAAGC+AAGCTTGG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/84/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/84/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/85"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/85/TTACAGAG+AGTGCCAG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/85/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/85/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/86"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/86/TACCGTCC+CTCATGAA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/86/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/86/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/87"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/87/TATCTCCA+TCTCACGG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/87/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/87/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/88"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/88/TGCCTCAA+CGTGATAA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/88/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/88/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/89"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/89/TCTTCCTG+TTCCAACG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/89/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/89/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/9"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/9/TAGGCTAA+AAGAGCAT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/9/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/9/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/90"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/90/TTATCCGT+CACGTGCA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/90/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/90/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/91"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/91/TTACCACT+TGTAGACA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/91/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/91/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/92"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/92/TACTCGAA+TCATCCGA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/92/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/92/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/93"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/93/CAAGCGAG+TTCGGCTT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/93/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/93/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/94"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/94/CTAGTCCT+TCAGGCGT"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/94/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/94/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/95"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/95/CGTGTACC+ATCCGGAA"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/95/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/95/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/96"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/96/CGGCAAGA+AAGGAAGG"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/96/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/96/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/Undetermined"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/Undetermined/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/Undetermined/unknown"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/all/all"
+2022-09-23 14:24:15 [2aaaaacbf200] INFO: creating directory "./Reports/html/000000000-A0HGR/default/all/unknown"
+2022-09-23 14:24:17 [2aaaaacbf200] Processing completed with 0 errors and 13 warnings.

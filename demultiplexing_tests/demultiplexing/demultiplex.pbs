@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#PBS -l walltime=01:00:00,select=1:ncpus=4:mem=32gb
+#PBS -N demultiplex
+#PBS -M nicholas.mateyko@ubc.ca
+#PBS -m abe
+#PBS -A st-cdeboer-1
+#PBS -o output.txt
+#PBS -e error.txt
+
+##############################################################
+
+cd $PBS_O_WORKDIR
+source /arc/software/spack/opt/spack/linux-centos7-x86_64/gcc-5.4.0/miniconda3-4.6.14-f4hr756q34tvp7nsjn7hovq46fomaww6/etc/profile.d/conda.sh
+conda activate demultiplex
+
+bcl2fastq --input-dir /arc/project/st-cdeboer-1/GSC-seq/2022-09-02_MiSeq_QC_GIL/output/BaseCalls --output-dir . --sample-sheet /arc/project/st-cdeboer-1/nick/miseq_demultiplex/TruSeq_Plate_1_sample_sheet_forward.csv --ignore-missing-filter --ignore-missing-positions

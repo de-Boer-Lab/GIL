@@ -1,0 +1,5821 @@
+Lane	Read	Project	Sample Id	Sample Name	Sample Number	TrimmedBases	PercentageOfBases
+1	1	default	1	1	1	0	0
+1	2	default	1	1	1	0	0
+1	1	default	10	10	10	0	0
+1	2	default	10	10	10	0	0
+1	1	default	11	11	11	0	0
+1	2	default	11	11	11	0	0
+1	1	default	12	12	12	0	0
+1	2	default	12	12	12	0	0
+1	1	default	13	13	13	0	0
+1	2	default	13	13	13	0	0
+1	1	default	14	14	14	0	0
+1	2	default	14	14	14	0	0
+1	1	default	15	15	15	0	0
+1	2	default	15	15	15	0	0
+1	1	default	16	16	16	0	0
+1	2	default	16	16	16	0	0
+1	1	default	17	17	17	0	0
+1	2	default	17	17	17	0	0
+1	1	default	18	18	18	0	0
+1	2	default	18	18	18	0	0
+1	1	default	19	19	19	0	0
+1	2	default	19	19	19	0	0
+1	1	default	2	2	2	0	0
+1	2	default	2	2	2	0	0
+1	1	default	20	20	20	0	0
+1	2	default	20	20	20	0	0
+1	1	default	21	21	21	0	0
+1	2	default	21	21	21	0	0
+1	1	default	22	22	22	0	0
+1	2	default	22	22	22	0	0
+1	1	default	23	23	23	0	0
+1	2	default	23	23	23	0	0
+1	1	default	24	24	24	0	0
+1	2	default	24	24	24	0	0
+1	1	default	25	25	25	0	0
+1	2	default	25	25	25	0	0
+1	1	default	26	26	26	0	0
+1	2	default	26	26	26	0	0
+1	1	default	27	27	27	0	0
+1	2	default	27	27	27	0	0
+1	1	default	28	28	28	0	0
+1	2	default	28	28	28	0	0
+1	1	default	29	29	29	0	0
+1	2	default	29	29	29	0	0
+1	1	default	3	3	3	0	0
+1	2	default	3	3	3	0	0
+1	1	default	30	30	30	0	0
+1	2	default	30	30	30	0	0
+1	1	default	31	31	31	0	0
+1	2	default	31	31	31	0	0
+1	1	default	32	32	32	0	0
+1	2	default	32	32	32	0	0
+1	1	default	33	33	33	0	0
+1	2	default	33	33	33	0	0
+1	1	default	34	34	34	0	0
+1	2	default	34	34	34	0	0
+1	1	default	35	35	35	0	0
+1	2	default	35	35	35	0	0
+1	1	default	36	36	36	0	0
+1	2	default	36	36	36	0	0
+1	1	default	37	37	37	0	0
+1	2	default	37	37	37	0	0
+1	1	default	38	38	38	0	0
+1	2	default	38	38	38	0	0
+1	1	default	39	39	39	0	0
+1	2	default	39	39	39	0	0
+1	1	default	4	4	4	0	0
+1	2	default	4	4	4	0	0
+1	1	default	40	40	40	0	0
+1	2	default	40	40	40	0	0
+1	1	default	41	41	41	0	0
+1	2	default	41	41	41	0	0
+1	1	default	42	42	42	0	0
+1	2	default	42	42	42	0	0
+1	1	default	43	43	43	0	0
+1	2	default	43	43	43	0	0
+1	1	default	44	44	44	0	0
+1	2	default	44	44	44	0	0
+1	1	default	45	45	45	0	0
+1	2	default	45	45	45	0	0
+1	1	default	46	46	46	0	0
+1	2	default	46	46	46	0	0
+1	1	default	47	47	47	0	0
+1	2	default	47	47	47	0	0
+1	1	default	48	48	48	0	0
+1	2	default	48	48	48	0	0
+1	1	default	49	49	49	0	0
+1	2	default	49	49	49	0	0
+1	1	default	5	5	5	0	0
+1	2	default	5	5	5	0	0
+1	1	default	50	50	50	0	0
+1	2	default	50	50	50	0	0
+1	1	default	51	51	51	0	0
+1	2	default	51	51	51	0	0
+1	1	default	52	52	52	0	0
+1	2	default	52	52	52	0	0
+1	1	default	53	53	53	0	0
+1	2	default	53	53	53	0	0
+1	1	default	54	54	54	0	0
+1	2	default	54	54	54	0	0
+1	1	default	55	55	55	0	0
+1	2	default	55	55	55	0	0
+1	1	default	56	56	56	0	0
+1	2	default	56	56	56	0	0
+1	1	default	57	57	57	0	0
+1	2	default	57	57	57	0	0
+1	1	default	58	58	58	0	0
+1	2	default	58	58	58	0	0
+1	1	default	59	59	59	0	0
+1	2	default	59	59	59	0	0
+1	1	default	6	6	6	0	0
+1	2	default	6	6	6	0	0
+1	1	default	60	60	60	0	0
+1	2	default	60	60	60	0	0
+1	1	default	61	61	61	0	0
+1	2	default	61	61	61	0	0
+1	1	default	62	62	62	0	0
+1	2	default	62	62	62	0	0
+1	1	default	63	63	63	0	0
+1	2	default	63	63	63	0	0
+1	1	default	64	64	64	0	0
+1	2	default	64	64	64	0	0
+1	1	default	65	65	65	0	0
+1	2	default	65	65	65	0	0
+1	1	default	66	66	66	0	0
+1	2	default	66	66	66	0	0
+1	1	default	67	67	67	0	0
+1	2	default	67	67	67	0	0
+1	1	default	68	68	68	0	0
+1	2	default	68	68	68	0	0
+1	1	default	69	69	69	0	0
+1	2	default	69	69	69	0	0
+1	1	default	7	7	7	0	0
+1	2	default	7	7	7	0	0
+1	1	default	70	70	70	0	0
+1	2	default	70	70	70	0	0
+1	1	default	71	71	71	0	0
+1	2	default	71	71	71	0	0
+1	1	default	72	72	72	0	0
+1	2	default	72	72	72	0	0
+1	1	default	73	73	73	0	0
+1	2	default	73	73	73	0	0
+1	1	default	74	74	74	0	0
+1	2	default	74	74	74	0	0
+1	1	default	75	75	75	0	0
+1	2	default	75	75	75	0	0
+1	1	default	76	76	76	0	0
+1	2	default	76	76	76	0	0
+1	1	default	77	77	77	0	0
+1	2	default	77	77	77	0	0
+1	1	default	78	78	78	0	0
+1	2	default	78	78	78	0	0
+1	1	default	79	79	79	0	0
+1	2	default	79	79	79	0	0
+1	1	default	8	8	8	0	0
+1	2	default	8	8	8	0	0
+1	1	default	80	80	80	0	0
+1	2	default	80	80	80	0	0
+1	1	default	81	81	81	0	0
+1	2	default	81	81	81	0	0
+1	1	default	82	82	82	0	0
+1	2	default	82	82	82	0	0
+1	1	default	83	83	83	0	0
+1	2	default	83	83	83	0	0
+1	1	default	84	84	84	0	0
+1	2	default	84	84	84	0	0
+1	1	default	85	85	85	0	0
+1	2	default	85	85	85	0	0
+1	1	default	86	86	86	0	0
+1	2	default	86	86	86	0	0
+1	1	default	87	87	87	0	0
+1	2	default	87	87	87	0	0
+1	1	default	88	88	88	0	0
+1	2	default	88	88	88	0	0
+1	1	default	89	89	89	0	0
+1	2	default	89	89	89	0	0
+1	1	default	9	9	9	0	0
+1	2	default	9	9	9	0	0
+1	1	default	90	90	90	0	0
+1	2	default	90	90	90	0	0
+1	1	default	91	91	91	0	0
+1	2	default	91	91	91	0	0
+1	1	default	92	92	92	0	0
+1	2	default	92	92	92	0	0
+1	1	default	93	93	93	0	0
+1	2	default	93	93	93	0	0
+1	1	default	94	94	94	0	0
+1	2	default	94	94	94	0	0
+1	1	default	95	95	95	0	0
+1	2	default	95	95	95	0	0
+1	1	default	96	96	96	0	0
+1	2	default	96	96	96	0	0
+1	1	default	unknown	Undetermined	0	0	0
+1	2	default	unknown	Undetermined	0	0	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 1	Sample Name: 1	Sample Number: 1
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 1	Sample Name: 1	Sample Number: 1
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 10	Sample Name: 10	Sample Number: 10
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 10	Sample Name: 10	Sample Number: 10
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 11	Sample Name: 11	Sample Number: 11
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 11	Sample Name: 11	Sample Number: 11
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 12	Sample Name: 12	Sample Number: 12
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 12	Sample Name: 12	Sample Number: 12
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 13	Sample Name: 13	Sample Number: 13
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 13	Sample Name: 13	Sample Number: 13
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 14	Sample Name: 14	Sample Number: 14
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 14	Sample Name: 14	Sample Number: 14
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 15	Sample Name: 15	Sample Number: 15
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 15	Sample Name: 15	Sample Number: 15
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 16	Sample Name: 16	Sample Number: 16
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 16	Sample Name: 16	Sample Number: 16
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 17	Sample Name: 17	Sample Number: 17
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 17	Sample Name: 17	Sample Number: 17
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 18	Sample Name: 18	Sample Number: 18
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 18	Sample Name: 18	Sample Number: 18
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 19	Sample Name: 19	Sample Number: 19
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 19	Sample Name: 19	Sample Number: 19
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 2	Sample Name: 2	Sample Number: 2
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 2	Sample Name: 2	Sample Number: 2
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 20	Sample Name: 20	Sample Number: 20
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 20	Sample Name: 20	Sample Number: 20
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 21	Sample Name: 21	Sample Number: 21
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 21	Sample Name: 21	Sample Number: 21
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 22	Sample Name: 22	Sample Number: 22
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 22	Sample Name: 22	Sample Number: 22
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 23	Sample Name: 23	Sample Number: 23
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 23	Sample Name: 23	Sample Number: 23
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 24	Sample Name: 24	Sample Number: 24
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 24	Sample Name: 24	Sample Number: 24
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 25	Sample Name: 25	Sample Number: 25
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 25	Sample Name: 25	Sample Number: 25
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 26	Sample Name: 26	Sample Number: 26
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 26	Sample Name: 26	Sample Number: 26
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 27	Sample Name: 27	Sample Number: 27
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 27	Sample Name: 27	Sample Number: 27
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 28	Sample Name: 28	Sample Number: 28
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 28	Sample Name: 28	Sample Number: 28
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 29	Sample Name: 29	Sample Number: 29
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 29	Sample Name: 29	Sample Number: 29
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 3	Sample Name: 3	Sample Number: 3
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 3	Sample Name: 3	Sample Number: 3
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 30	Sample Name: 30	Sample Number: 30
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 30	Sample Name: 30	Sample Number: 30
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 31	Sample Name: 31	Sample Number: 31
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 31	Sample Name: 31	Sample Number: 31
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 32	Sample Name: 32	Sample Number: 32
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 32	Sample Name: 32	Sample Number: 32
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 33	Sample Name: 33	Sample Number: 33
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 33	Sample Name: 33	Sample Number: 33
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 34	Sample Name: 34	Sample Number: 34
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 34	Sample Name: 34	Sample Number: 34
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 35	Sample Name: 35	Sample Number: 35
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 35	Sample Name: 35	Sample Number: 35
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 36	Sample Name: 36	Sample Number: 36
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 36	Sample Name: 36	Sample Number: 36
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 37	Sample Name: 37	Sample Number: 37
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 37	Sample Name: 37	Sample Number: 37
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 38	Sample Name: 38	Sample Number: 38
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 38	Sample Name: 38	Sample Number: 38
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 39	Sample Name: 39	Sample Number: 39
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 39	Sample Name: 39	Sample Number: 39
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 4	Sample Name: 4	Sample Number: 4
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 4	Sample Name: 4	Sample Number: 4
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 40	Sample Name: 40	Sample Number: 40
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 40	Sample Name: 40	Sample Number: 40
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 41	Sample Name: 41	Sample Number: 41
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 41	Sample Name: 41	Sample Number: 41
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 42	Sample Name: 42	Sample Number: 42
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 42	Sample Name: 42	Sample Number: 42
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 43	Sample Name: 43	Sample Number: 43
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 43	Sample Name: 43	Sample Number: 43
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 44	Sample Name: 44	Sample Number: 44
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 44	Sample Name: 44	Sample Number: 44
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 45	Sample Name: 45	Sample Number: 45
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 45	Sample Name: 45	Sample Number: 45
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 46	Sample Name: 46	Sample Number: 46
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 46	Sample Name: 46	Sample Number: 46
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 47	Sample Name: 47	Sample Number: 47
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 47	Sample Name: 47	Sample Number: 47
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 48	Sample Name: 48	Sample Number: 48
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 48	Sample Name: 48	Sample Number: 48
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 49	Sample Name: 49	Sample Number: 49
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 49	Sample Name: 49	Sample Number: 49
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 5	Sample Name: 5	Sample Number: 5
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 5	Sample Name: 5	Sample Number: 5
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 50	Sample Name: 50	Sample Number: 50
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 50	Sample Name: 50	Sample Number: 50
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 51	Sample Name: 51	Sample Number: 51
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 51	Sample Name: 51	Sample Number: 51
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 52	Sample Name: 52	Sample Number: 52
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 52	Sample Name: 52	Sample Number: 52
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 53	Sample Name: 53	Sample Number: 53
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 53	Sample Name: 53	Sample Number: 53
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 54	Sample Name: 54	Sample Number: 54
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 54	Sample Name: 54	Sample Number: 54
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 55	Sample Name: 55	Sample Number: 55
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 55	Sample Name: 55	Sample Number: 55
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 56	Sample Name: 56	Sample Number: 56
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 56	Sample Name: 56	Sample Number: 56
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 57	Sample Name: 57	Sample Number: 57
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 57	Sample Name: 57	Sample Number: 57
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 58	Sample Name: 58	Sample Number: 58
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 58	Sample Name: 58	Sample Number: 58
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 59	Sample Name: 59	Sample Number: 59
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 59	Sample Name: 59	Sample Number: 59
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 6	Sample Name: 6	Sample Number: 6
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 6	Sample Name: 6	Sample Number: 6
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 60	Sample Name: 60	Sample Number: 60
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 60	Sample Name: 60	Sample Number: 60
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 61	Sample Name: 61	Sample Number: 61
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 61	Sample Name: 61	Sample Number: 61
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 62	Sample Name: 62	Sample Number: 62
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 62	Sample Name: 62	Sample Number: 62
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 63	Sample Name: 63	Sample Number: 63
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 63	Sample Name: 63	Sample Number: 63
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 64	Sample Name: 64	Sample Number: 64
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 64	Sample Name: 64	Sample Number: 64
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 65	Sample Name: 65	Sample Number: 65
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 65	Sample Name: 65	Sample Number: 65
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 66	Sample Name: 66	Sample Number: 66
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 66	Sample Name: 66	Sample Number: 66
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 67	Sample Name: 67	Sample Number: 67
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 67	Sample Name: 67	Sample Number: 67
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 68	Sample Name: 68	Sample Number: 68
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 68	Sample Name: 68	Sample Number: 68
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 69	Sample Name: 69	Sample Number: 69
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 69	Sample Name: 69	Sample Number: 69
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 7	Sample Name: 7	Sample Number: 7
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 7	Sample Name: 7	Sample Number: 7
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 70	Sample Name: 70	Sample Number: 70
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 70	Sample Name: 70	Sample Number: 70
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 71	Sample Name: 71	Sample Number: 71
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 71	Sample Name: 71	Sample Number: 71
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 72	Sample Name: 72	Sample Number: 72
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 72	Sample Name: 72	Sample Number: 72
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 73	Sample Name: 73	Sample Number: 73
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 73	Sample Name: 73	Sample Number: 73
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 74	Sample Name: 74	Sample Number: 74
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 74	Sample Name: 74	Sample Number: 74
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 75	Sample Name: 75	Sample Number: 75
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 75	Sample Name: 75	Sample Number: 75
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 76	Sample Name: 76	Sample Number: 76
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 76	Sample Name: 76	Sample Number: 76
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 77	Sample Name: 77	Sample Number: 77
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 77	Sample Name: 77	Sample Number: 77
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 78	Sample Name: 78	Sample Number: 78
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 78	Sample Name: 78	Sample Number: 78
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 79	Sample Name: 79	Sample Number: 79
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 79	Sample Name: 79	Sample Number: 79
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 8	Sample Name: 8	Sample Number: 8
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 8	Sample Name: 8	Sample Number: 8
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 80	Sample Name: 80	Sample Number: 80
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 80	Sample Name: 80	Sample Number: 80
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 81	Sample Name: 81	Sample Number: 81
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 81	Sample Name: 81	Sample Number: 81
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 82	Sample Name: 82	Sample Number: 82
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 82	Sample Name: 82	Sample Number: 82
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 83	Sample Name: 83	Sample Number: 83
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 83	Sample Name: 83	Sample Number: 83
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 84	Sample Name: 84	Sample Number: 84
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 84	Sample Name: 84	Sample Number: 84
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 85	Sample Name: 85	Sample Number: 85
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 85	Sample Name: 85	Sample Number: 85
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 86	Sample Name: 86	Sample Number: 86
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 86	Sample Name: 86	Sample Number: 86
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 87	Sample Name: 87	Sample Number: 87
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 87	Sample Name: 87	Sample Number: 87
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 88	Sample Name: 88	Sample Number: 88
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 88	Sample Name: 88	Sample Number: 88
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 89	Sample Name: 89	Sample Number: 89
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 89	Sample Name: 89	Sample Number: 89
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 9	Sample Name: 9	Sample Number: 9
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 9	Sample Name: 9	Sample Number: 9
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 90	Sample Name: 90	Sample Number: 90
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 90	Sample Name: 90	Sample Number: 90
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 91	Sample Name: 91	Sample Number: 91
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 91	Sample Name: 91	Sample Number: 91
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 92	Sample Name: 92	Sample Number: 92
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 92	Sample Name: 92	Sample Number: 92
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 93	Sample Name: 93	Sample Number: 93
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: 93	Sample Name: 93	Sample Number: 93
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 1	Project: default	Sample Id: 94	Sample Name: 94	Sample Number: 94
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 94	Sample Name: 94	Sample Number: 94
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 95	Sample Name: 95	Sample Number: 95
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 95	Sample Name: 95	Sample Number: 95
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: 96	Sample Name: 96	Sample Number: 96
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 2	Project: default	Sample Id: 96	Sample Name: 96	Sample Number: 96
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	0
+
+Lane: 1	Read: 1	Project: default	Sample Id: unknown	Sample Name: Undetermined	Sample Number: 0
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1
+
+Lane: 1	Read: 2	Project: default	Sample Id: unknown	Sample Name: Undetermined	Sample Number: 0
+0	0
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+10	0
+11	0
+12	0
+13	0
+14	0
+15	0
+16	0
+17	0
+18	0
+19	0
+20	0
+21	0
+22	0
+23	0
+24	0
+25	0
+26	1

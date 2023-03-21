@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<RunInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="5">
+  <Run Id="20220923_M00329_6_000000000-A0HGR" Number="6">
+    <Flowcell>000000000-A0HGR</Flowcell>
+    <Instrument>M00329</Instrument>
+    <Date>230922</Date>
+    <Reads>
+      <Read Number="1" NumCycles="26" IsIndexedRead="N" />
+      <Read Number="2" NumCycles="8" IsIndexedRead="Y" />
+      <Read Number="3" NumCycles="8" IsIndexedRead="Y" />
+      <Read Number="4" NumCycles="26" IsIndexedRead="N" />
+    </Reads>
+    <FlowcellLayout LaneCount="1" SurfaceCount="1" SwathCount="1" TileCount="2" SectionPerLane="1" LanePerSection="1">
+      <TileSet TileNamingConvention="FourDigit">
+        <Tiles>
+          <Tile>1_1101</Tile>
+          <Tile>1_1102</Tile>
+        </Tiles>
+      </TileSet>
+    </FlowcellLayout>
+    <ImageDimensions Width="1550" Height="310" />
+    <ImageChannels>
+      <Name>1</Name>
+      <Name>2</Name>
+      <Name>3</Name>
+      <Name>4</Name>
+    </ImageChannels>
+  </Run>
+</RunInfo>
