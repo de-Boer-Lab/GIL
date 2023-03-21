@@ -5,6 +5,8 @@ GIL is a Python package that designs indexing primers for multiplexed sequencing
 See the [wiki](https://github.com/de-Boer-Lab/GIL/wiki) for explanations of what GIL does and
 examples of how to use it. Can't find an answer to your question in the wiki? Start a discussion on GIL's [discussion page](https://github.com/de-Boer-Lab/GIL/discussions).
 
+Want a feature added to GIL? Make a feature request on the [issues page](https://github.com/de-Boer-Lab/GIL/issues).
+
 A web app version of GIL is available here: https://dbl-gil.streamlitapp.com/. If you encounter a message saying  the app is down/booting, please be patient and try again in 30 minutes. This can happen due to inactivitiy. 
 
 ![](images/novaseq_gil@0.25x.png)
