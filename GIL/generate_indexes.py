@@ -107,6 +107,10 @@ def main(argv=sys.argv[1:]):
     if args.blocklist is not None:
         with open(args.blocklist, 'r') as f:
             blocklist = [index.strip() for index in f.readlines()]
+        if blocklist == []:
+            sys.exit("Your list of disallowed indexes is empty. "
+                     "Please ensure your blocklist file is a .txt file "
+                     "with a single disallowed index per line.")
 
     # Generate all possible indexes. For index lengths > 9, generating all possible sequences and filtering them
     # all takes too long. Instead, generate a sample of 5k sequences.
@@ -126,17 +130,24 @@ def main(argv=sys.argv[1:]):
         seqs = filter_startingG(seqs, 2)
     else:
         seqs = filter_startingG(seqs, 1)
+
     seqs = filter_GC(seqs, minGC=args.min_GC, maxGC=args.max_GC)
     seqs = filter_homopolymer(seqs, max_repeat=args.max_homopolymer)
     seqs = filter_dinucleotide_repeats(seqs, max_dinu=args.max_dinu)
+
     if args.blocklist is not None:
-        seqs = filter_blocklist(seqs, blocklist, dist=args.dist, dist_fun=levenshtein_dist)
+        try:
+            seqs = filter_blocklist(seqs, blocklist, dist=args.dist, dist_fun=levenshtein_dist)
+        except ValueError as e:
+            sys.exit(e)
+
     if not args.no_filter_self_priming:
         seqs_i7 = filter_self_priming(seqs, min_dist=3, primer_5prime=primer_i7_start, primer_3prime=primer_i7_end)
         seqs_i5 = filter_self_priming(seqs, min_dist=3, primer_5prime=primer_i5_start, primer_3prime=primer_i5_end)
     else:
         seqs_i7 = seqs
         seqs_i5 = seqs
+
     if args.allow_start_G:
         seqs_i5 = filter_endingC(seqs_i5, 2)
     else:
