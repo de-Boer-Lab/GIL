@@ -33,7 +33,7 @@ or
 
 `GIL [COMMAND] -h`
 
-See [usage examples](#usage-examples) below for more details, and the [command line arguments](#command-line-arguments) section for explanations of all arguments.
+See [usage examples](https://github.com/de-Boer-Lab/GIL/wiki/Usage-Examples) for more details, and the [command line arguments](https://github.com/de-Boer-Lab/GIL/wiki/Running-GIL-from-the-Command-Line#arguments-for-index-generation) section of the wiki for explanations of all arguments.
 
 ## Running from a cloned repo
 
