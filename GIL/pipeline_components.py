@@ -227,8 +227,14 @@ def filter_blocklist(seqs, blocklist, dist, dist_fun):
     blocklist = [seq.upper() for seq in blocklist]
 
     chars = set("".join(blocklist))
-    if chars != {'A', 'C', 'G', 'T'}:
-        raise ValueError(f"Blocklist indexes must only contain A, C, G, T. These characters are present in your blocklist: {chars}.")
+    allowed = {'A', 'C', 'G', 'T'}
+    invalid = chars - allowed
+
+    if invalid:
+        raise ValueError(
+            f"Invalid characters in blocklist: {invalid}. "
+            f"Only A, C, G, T are allowed."
+        )
 
     seq_len = len(seqs[0])
     for seq in blocklist:
